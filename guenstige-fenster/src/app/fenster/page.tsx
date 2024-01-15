@@ -42,7 +42,7 @@ export default function Page() {
                 >
                   {item.fenster.map((window, index) => {
                     return (
-                      <SwiperSlide>
+                      <SwiperSlide key={index}>
                         <Link
                           href={
                             "/fensterdetail/" + encodeURIComponent(window.id)
