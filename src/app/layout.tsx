@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Inter, Nunito_Sans, Open_Sans } from "next/font/google";
+import { Suspense } from "react";
+import Loading from "./loading";
 import "./globals.css";
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
@@ -34,7 +36,7 @@ export default function RootLayout({
     <html lang="de">
       <body className={openSans.className + " text-black"}>
         <Header />
-        {children}
+        <Suspense fallback={<Loading />}>{children}</Suspense>
         <Footer />
       </body>
     </html>
