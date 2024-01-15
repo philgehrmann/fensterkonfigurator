@@ -1,0 +1,28 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/Users/philipp.gehrmann/Documents/Funprojects/guenstig/guenstige-fenster"
+publishOrigin = "default"
+base = "/Users/philipp.gehrmann/Documents/Funprojects/guenstig/guenstige-fenster"
+command = "npm run build"
+commandOrigin = "ui"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
