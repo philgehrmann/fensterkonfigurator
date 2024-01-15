@@ -1,0 +1,110 @@
+{
+  "fenster": [
+    {
+      "title": "Aluminium",
+      "fenster": [
+        {
+          "name": "THERMOMAX 5 CLASSIC KUNSTSTOFFFENSTER",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "price": 149,
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
+          "details": {}
+        },
+        {
+          "name": "Fenster2",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_2",
+          "details": {}
+        },
+        {
+          "name": "Fenster3",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_3",
+          "details": {}
+        },
+        {
+          "name": "Fenster4",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_4",
+          "details": {}
+        },
+        {
+          "name": "Fenster5",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_5",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "title": "Holz",
+      "fenster": [
+        {
+          "name": "Fenster1",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_6",
+          "details": {}
+        },
+        {
+          "name": "Fenster2",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_7",
+          "details": {}
+        },
+        {
+          "name": "Fenster3",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_8",
+          "details": {}
+        },
+        {
+          "name": "Fenster4",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_9",
+          "details": {}
+        },
+        {
+          "name": "Fenster5",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_10",
+          "details": {}
+        }
+      ]
+    },
+    {
+      "title": "Stahl",
+      "fenster": [
+        {
+          "name": "Fenster1",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_11",
+          "details": {}
+        },
+        {
+          "name": "Fenster2",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_12",
+          "details": {}
+        },
+        {
+          "name": "Fenster3",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_13",
+          "details": {}
+        },
+        {
+          "name": "Fenster4",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_14",
+          "details": {}
+        },
+        {
+          "name": "Fenster5",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_15",
+          "details": {}
+        }
+      ]
+    }
+  ]
+}

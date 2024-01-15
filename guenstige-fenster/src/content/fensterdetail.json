@@ -1,0 +1,16 @@
+{
+  "fenster": [
+    {
+      "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
+      "details": [
+        {
+          "name": "THERMOMAX 5 CLASSIC KUNSTSTOFFFENSTER",
+          "image": "https://picsum.photos/seed/picsum/230/200",
+          "price": 149,
+          "linkname": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
+          "details": {}
+        }
+      ]
+    }
+  ]
+}

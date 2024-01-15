@@ -1,0 +1,79 @@
+{
+  "navigation": [
+    {
+      "name": "Fenster",
+      "path": "/",
+      "subnavIdent": "nav_fenster",
+      "subnav": [
+        {
+          "type": "Aluminium",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "fenster",
+          "altTag": "Polnische Fenster - Guenstig kaufen",
+          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
+        },
+        {
+          "type": "Kunststoff",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "rahmen",
+          "altTag": "Polnische Fenster - Guenstig kaufen",
+          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
+        },
+        {
+          "type": "Holz",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "montage",
+          "altTag": "Die perfekte Montage der Profis",
+          "text": "Einfache, schnelle und kostengünstige Montage"
+        },
+        {
+          "type": "Holz-Aluminium",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "montage",
+          "altTag": "Die perfekte Montage der Profis",
+          "text": "Einfache, schnelle und kostengünstige Montage"
+        }
+      ]
+    },
+    {
+      "name": "Türen",
+      "path": "produkte",
+      "subnavIdent": "nav_produkte",
+      "subnav": [
+        {
+          "type": "Außentüren",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "fenster",
+          "altTag": "Polnische Fenster - Guenstig kaufen",
+          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
+        },
+        {
+          "type": "Innentüren",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "rahmen",
+          "altTag": "Polnische Fenster - Guenstig kaufen",
+          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
+        },
+        {
+          "type": "Haustüren",
+          "image": "https://picsum.photos/seed/picsum/420/300",
+          "path": "montage",
+          "altTag": "Die perfekte Montage der Profis",
+          "text": "Einfache, schnelle und kostengünstige Montage"
+        }
+      ]
+    },
+    {
+      "name": "Konfigurator",
+      "path": "konfigurator"
+    },
+    {
+      "name": "Montage",
+      "path": "beratung"
+    },
+    {
+      "name": "Kontakt",
+      "path": "kontakt"
+    }
+  ]
+}

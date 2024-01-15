@@ -1,0 +1,38 @@
+{
+  "mainslider": [
+    {
+      "page": "home",
+      "slides": [
+        {
+          "name": "Qualitätsfenster aus Polen",
+          "image": "https://picsum.photos/seed/picsum/2000/600",
+          "headline": "Qualitätsfenster aus Polen",
+          "description": "",
+          "buttonPath": "",
+          "buttonName": ""
+        },
+        {
+          "name": "Fenster1",
+          "image": "https://picsum.photos/seed/picsum/2000/600"
+        }
+      ]
+    },
+    {
+      "page": "fenster",
+      "slides": [
+        {
+          "name": "Fenster1",
+          "headline": "",
+          "description": "",
+          "buttonPath": "",
+          "buttonName": "",
+          "image": "https://picsum.photos/id/16/2000/600?random=3"
+        },
+        {
+          "name": "Fenster1",
+          "image": "https://picsum.photos/seed/picsum/2000/600?random=2"
+        }
+      ]
+    }
+  ]
+}
