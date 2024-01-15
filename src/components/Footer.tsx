@@ -59,7 +59,7 @@ export default function Footer() {
                     className="text-[14px] mt-4 leading-8 hover:underline"
                     href=""
                   >
-                    FAQ's
+                    FAQ
                   </Link>
                 </li>
               </ul>
