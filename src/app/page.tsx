@@ -7,7 +7,7 @@ export default async function Home() {
     <div>
       <MainSlider />
       <section className="w-full bg-lightgray">
-        <div className="content max-w-[60%] mx-auto py-24 text-center text-[24px]">
+        <div className="content max-w-[60%] mx-auto py-24 text-center text-[18px] lg:text-[24px]">
           <span className="font-bold ">Wir</span> stehen für{" "}
           <span className="font-bold ">moderne</span>,
           <span className="font-bold ">energieeffiziente Fensterlösungen</span>,
