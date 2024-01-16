@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className=" mx-auto border-t-4 lg:border-t-8 border-bermuda bg-black">
       <div className="lg:max-w-[80%] mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-[25%_75%] p-12 text-white items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-[20%_80%] p-12 text-white items-start">
           <div>
             <h3 className="text-[24px] text-bermuda uppercase mb-0 mt-0">
               SG BAU GmbH
@@ -33,7 +33,7 @@ export default function Footer() {
                 <li>
                   <Link
                     className="text-[14px] mt-4 leading-8 hover:underline"
-                    href=""
+                    href="/energieeffizienz"
                   >
                     Energieeffizienz
                   </Link>
@@ -140,7 +140,13 @@ export default function Footer() {
               </h3>
               <form>
                 <input type="email" placeholder="E-Mail Adresse" />
-                <input type="checkbox" name="rights" />
+                <label className="form-control my-2">
+                  <input type="checkbox" name="checkbox" />
+                  Ich habe die Informationen zur Verarbeitung gemäß Art. 13 der
+                  EU-VERORDNUNG 2016/679 und genehmigen die Verarbeitung der
+                  Daten
+                </label>
+                <a className="btn uppercase">Abbonieren</a>
               </form>
             </div>
           </div>

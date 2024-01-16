@@ -27,7 +27,7 @@ export default function Infobar() {
               icon={faCheck}
             />{" "}
             <span className="text-[12px] text-white">
-              einfache Konfiguration
+              einfacher Bestellvorgang
             </span>
           </SwiperSlide>
           <SwiperSlide
@@ -39,7 +39,7 @@ export default function Infobar() {
               className="inline-block pr-1 self-center text-[12px] text-bermuda"
               icon={faCheck}
             />{" "}
-            <span className="text-[12px] text-white">schnelle Lieferung</span>
+            <span className="text-[12px] text-white">schnelle Abwicklung</span>
           </SwiperSlide>
           <SwiperSlide
             key={3}
@@ -55,7 +55,7 @@ export default function Infobar() {
         </Swiper>
       </div>
       <div className="hidden lg:block max-w-full mx-auto bg-black w-full z-[25]">
-        <div className="lg:max-w-[75%] mx-auto py-4">
+        <div className="px-12 mx-auto py-4">
           <div className="grid lg:grid-cols-[440px_1fr_1fr]">
             <div className="grid grid-flow-col">
               <div>
