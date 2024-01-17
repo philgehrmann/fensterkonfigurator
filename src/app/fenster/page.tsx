@@ -55,7 +55,7 @@ export default function Page() {
                             alt={window.name}
                             width={200}
                             height={200}
-                            className="w-[60%] lg:w-[80%] h-auto mx-auto"
+                            className="w-[80%] lg:w-[80%] h-auto mx-auto"
                           />
                           <p className="mt-6 text-[13px] lg:text-[15px]">
                             {window.name}

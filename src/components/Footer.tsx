@@ -6,12 +6,12 @@ export default function Footer() {
       <div className="xl:max-w-[80%] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-[20%_80%] p-12 text-white items-start">
           <div>
-            <h3 className="text-[24px] text-bermuda uppercase mb-0 mt-0">
+            <h3 className="text-[18px] text-bermuda uppercase mb-2 mt-0">
               SG BAU GmbH
             </h3>
-            <p className="text-white text-[16px]"> Siebengebirgsstraße 14</p>
-            <p className="text-white text-[16px]"> 53757 Sankt Augustin</p>
-            <p className="text-white text-[16px] mt-4">
+            <p className="text-white text-[14px]"> Siebengebirgsstraße 14</p>
+            <p className="text-white text-[14px]"> 53757 Sankt Augustin</p>
+            <p className="text-white text-[14px] mt-4">
               {" "}
               Tel: +49 176 46771980
             </p>

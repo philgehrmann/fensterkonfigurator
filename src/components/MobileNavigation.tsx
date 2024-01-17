@@ -83,7 +83,7 @@ export default function MobileNavigation({
               return !item.subnav ? (
                 <Link href={item.path} key={index}>
                   <li
-                    className="grid content-center grid-flow-col border-b-2 text-[22px] py-4 border-transparent  font-[500]  group  hover:text-bermuda cursor-pointer"
+                    className="grid content-center grid-flow-col border-b-2 text-[22px] py-4 border-transparent  font-[500]  hover:text-bermuda cursor-pointer"
                     data-hover={item.subnavIdent}
                   >
                     {item.name}
@@ -98,7 +98,7 @@ export default function MobileNavigation({
               ) : (
                 <div>
                   <li
-                    className=" border-b-2 border-bermuda text-[22px] list-none py-4 border-transparent  font-[500]  group  hover:text-bermuda cursor-pointer pt-4"
+                    className=" border-b-2 border-bermuda text-[22px] list-none py-4 border-transparent  font-[500] cursor-pointer pt-4"
                     data-hover={item.subnavIdent}
                     key={index}
                   >

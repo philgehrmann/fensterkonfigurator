@@ -26,8 +26,8 @@ export default function Header() {
       <header
         className={
           scrolltopdata
-            ? "max-w-full mx-auto  w-full z-[200] border-b-2 border-white fixed bg-transparent"
-            : "max-w-full mx-auto  w-full z-[200] border-b-2 border-white fixed bg-white"
+            ? "max-w-full mx-auto  w-full z-[200] border-b-2 border-white fixed bg-transparent top-0"
+            : "max-w-full mx-auto  w-full z-[200] border-b-2 border-white fixed bg-white top-0"
         }
       >
         {showNavigation && (
