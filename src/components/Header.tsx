@@ -48,9 +48,27 @@ export default function Header() {
               className="navMobile_wrapper hover:cursor-pointer py-6 pt-8 flex flex-col items-center"
               onClick={() => setShowNavigation(true)}
             >
-              <p className="w-[28px] block -mt-[12px] h-[2px] bg-black"></p>
-              <p className="w-[20px] block mt-[6px] h-[2px] bg-black self-end"></p>
-              <p className="w-[28px] block -mt-[-6px] h-[2px] bg-black"></p>
+              <p
+                className={
+                  scrolltopdata
+                    ? "w-[28px] block -mt-[12px] h-[2px] bg-white"
+                    : "w-[28px] block -mt-[12px] h-[2px] bg-black"
+                }
+              ></p>
+              <p
+                className={
+                  scrolltopdata
+                    ? "w-[20px] block mt-[6px] h-[2px] bg-white self-end"
+                    : "w-[20px] block mt-[6px] h-[2px] bg-black self-end"
+                }
+              ></p>
+              <p
+                className={
+                  scrolltopdata
+                    ? "w-[28px] block -mt-[-6px] h-[2px] bg-white"
+                    : "w-[28px] block -mt-[-6px] h-[2px] bg-black"
+                }
+              ></p>
             </div>
           </div>
           <div className="justify-self-end hidden self-center lg:block"></div>

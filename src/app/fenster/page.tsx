@@ -2,6 +2,7 @@
 import content from "../../content/fenster.json";
 import MainSlider from "@/components/MainSlider";
 import Link from "next/link";
+import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
@@ -26,7 +27,7 @@ export default function Page() {
                 <Swiper
                   modules={[Autoplay]}
                   spaceBetween={15}
-                  slidesPerView={1.5}
+                  slidesPerView={2.5}
                   breakpoints={{
                     768: {
                       slidesPerView: 2.5,
@@ -47,14 +48,18 @@ export default function Page() {
                           href={
                             "/fensterdetail/" + encodeURIComponent(window.id)
                           }
-                          className=" hover:shadow-xl p-5"
+                          className=" hover:shadow-xl p-5 text-center"
                         >
-                          <img
+                          <Image
                             src={window.image}
                             alt={window.name}
-                            className="w-full h-auto"
+                            width={200}
+                            height={200}
+                            className="w-[60%] lg:w-[80%] h-auto mx-auto"
                           />
-                          <p className="mt-2">{window.name}</p>
+                          <p className="mt-6 text-[13px] lg:text-[15px]">
+                            {window.name}
+                          </p>
                           <p className="mt-2 text-[24px] justify-self-start">
                             ab {window.price} €
                           </p>
