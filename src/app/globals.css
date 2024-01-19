@@ -7,6 +7,8 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --after-overlay: linear-gradient(0deg, rgb(0 0 0/58%), transparent);
+  --swiper-pagination-color: #78dcca;
+  --swiper-navigation-color: #78dcca;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +27,9 @@ body {
 
 h2 {
   font-size: clamp(1rem, 10vw, 2rem);
+}
+h3 {
+  font-size: clamp(1rem, 3vw, 2rem);
 }
 @layer components {
   h2 {
@@ -50,6 +55,9 @@ h2 {
   input[type="email"]::placeholder,
   input[type="number"]::placeholder {
     @apply text-[14px];
+  }
+  swiper-pagination-bullet swiper-pagination-bullet-active {
+    @apply bg-bermuda !important;
   }
 
   input[type="checkbox"] {

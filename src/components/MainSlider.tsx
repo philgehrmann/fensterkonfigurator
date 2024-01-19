@@ -9,14 +9,15 @@ import "swiper/css/bundle";
 
 export default function MainSlider({ page }: { page: any }) {
   return (
-    <div className="w-full  mx-auto text-center h-[800px] mb-12 lg:mb-0 relative top-0">
+    <div className="w-full mx-auto text-center h-[75vh] lg:h-[100vh] lg:mb-12 lg:mb-0 relative top-0">
       <Swiper
+        navigation={true}
         modules={[Navigation, Virtual]}
         spaceBetween={0}
         slidesPerView={1}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="h-[800px]"
+        className="h-[75vh] lg:h-[100vh]"
         virtual
       >
         {content.mainslider.map((item, index) => {

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { getStoryblokApi } from "@storyblok/react/rsc";
 import MainSlider from "@/components/MainSlider";
+import Partnersection from "@/components/Parnersection";
 
 export default async function Home() {
   return (
@@ -17,6 +18,7 @@ export default async function Home() {
           und <span className="font-bold">Nachhaltigkeit</span> erfüllen.
         </div>
       </section>
+      <Partnersection />
     </div>
   );
 }
