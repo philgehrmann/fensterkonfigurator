@@ -6,6 +6,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --after-overlay: linear-gradient(0deg, rgb(0 0 0/58%), transparent);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -21,9 +22,13 @@ body {
   height: 100vh;
   background: #ffffff;
 }
+
+h2 {
+  font-size: clamp(1rem, 10vw, 2rem);
+}
 @layer components {
   h2 {
-    @apply text-[42px] lg:text-[52px] my-12;
+    @apply my-12;
   }
   h3 {
     @apply text-[32px] lg:text-[42px] my-12;
@@ -110,7 +115,10 @@ body {
   }
 
   .btn {
-    @apply p-3 text-sm rounded-md mt-4 mb-4 bg-bermuda text-white w-full place-content-center cursor-pointer block text-center overflow-hidden;
+    @apply p-3  rounded-md mt-4 mb-4 bg-bermuda text-white w-full place-content-center cursor-pointer block text-center overflow-hidden;
+  }
+  .btn {
+    font-size: clamp(0.75rem, 4vw, 1.2rem);
   }
 }
 .mobile-nav-slide-bg::after {
