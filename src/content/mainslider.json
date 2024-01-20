@@ -5,15 +5,14 @@
       "slides": [
         {
           "name": "Qualitätsfenster aus Polen",
-          "image": "https://picsum.photos/seed/picsum/2000/600",
-          "headline": "Qualitätsfenster aus Polen",
-          "description": "",
-          "buttonPath": "",
-          "buttonName": ""
+          "image": "/images/fenster/bg-fenster-slider.jpg",
+          "headline": "Qualitätsfenster aus Polen"
         },
         {
           "name": "Fenster1",
-          "image": "https://picsum.photos/seed/picsum/2000/600"
+          "image": "/images/fenster/bg-fenster-slider.jpg",
+          "headline": "Qualitätsfenster aus Polen",
+          "description": ""
         }
       ]
     },
@@ -38,16 +37,15 @@
       "page": "energieeffizienz",
       "slides": [
         {
-          "name": "Fenster1",
-          "headline": "",
-          "description": "",
-          "buttonPath": "",
-          "buttonName": "",
-          "image": "https://picsum.photos/id/16/2000/600?random=3"
+          "name": "Qualitätsfenster aus Polen",
+          "image": "/images/fenster/bg-fenster-slider.jpg",
+          "headline": "Qualitätsfenster aus Polen"
         },
         {
           "name": "Fenster1",
-          "image": "https://picsum.photos/seed/picsum/2000/600?random=2"
+          "image": "/images/fenster/bg-fenster-slider.jpg",
+          "headline": "Qualitätsfenster aus Polen",
+          "description": ""
         }
       ]
     }

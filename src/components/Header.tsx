@@ -3,21 +3,19 @@ import { useState, useEffect } from "react";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 import Infobar from "./Infobar";
+import Salebar from "./Salebar";
 
 export default function Header() {
   const [showNavigation, setShowNavigation] = useState(false);
   const [scrolltopdata, setscrolltopdata] = useState(false);
 
   useEffect(() => {
+    setscrolltopdata(true);
     window.addEventListener("scroll", () => {
       if (window.scrollY > 0) {
-        console.log("größer");
         setscrolltopdata(false);
-        console.log(scrolltopdata);
       } else {
-        console.log("kleiner");
         setscrolltopdata(true);
-        console.log(scrolltopdata);
       }
     });
   }, []);
@@ -26,8 +24,8 @@ export default function Header() {
       <header
         className={
           scrolltopdata
-            ? "max-w-full mx-auto  w-full z-[200] border-b-2 border-white fixed bg-transparent top-0"
-            : "max-w-full mx-auto  w-full z-[200] border-b-2 border-white fixed bg-white top-0"
+            ? "max-w-full mx-auto  w-full z-[200] fixed bg-transparent top-0"
+            : "max-w-full mx-auto  w-full z-[200] fixed bg-white top-0"
         }
       >
         {showNavigation && (
@@ -76,6 +74,7 @@ export default function Header() {
             <Navigation scrolltopdata={scrolltopdata} />
           </div>
         </div>
+        {!scrolltopdata && <Salebar />}
       </header>
     </>
   );

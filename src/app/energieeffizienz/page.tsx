@@ -3,7 +3,7 @@ import MainSlider from "@/components/MainSlider";
 export default function Page() {
   return (
     <>
-      <MainSlider page="energie" />
+      <MainSlider page="energieeffizienz" />
     </>
   );
 }

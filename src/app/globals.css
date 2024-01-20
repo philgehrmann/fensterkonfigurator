@@ -6,7 +6,16 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --after-overlay: linear-gradient(0deg, rgb(0 0 0/58%), transparent);
+  --after-overlay: linear-gradient(
+    27deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(245, 245, 245, 0) 100%
+  );
+  --after-overlay-content: linear-gradient(
+    27deg,
+    rgba(106, 214, 184, 1) 0%,
+    rgba(245, 245, 245, 0) 100%
+  );
   --swiper-pagination-color: #78dcca;
   --swiper-navigation-color: #78dcca;
 }
@@ -157,4 +166,15 @@ h3 {
   left: -30px;
   right: 0;
   background: rgb(0, 50, 36);
+}
+
+.fenster-slider::after {
+  content: "";
+  position: absolute;
+  background: var(--after-overlay);
+  width: 100vw;
+  height: 89vh;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }
