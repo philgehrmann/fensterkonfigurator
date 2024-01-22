@@ -6,7 +6,6 @@ import Partnersection from "@/components/Parnersection";
 export default async function Home() {
   return (
     <div>
-      <MainSlider page="home" />
       <section className="w-full bg-lightgray">
         <div className="content max-w-[60%] mx-auto py-24 text-center text-[18px] lg:text-[24px]">
           <span className="font-bold ">Wir</span> stehen für{" "}

@@ -11,7 +11,6 @@ export default function Navigation({
   scrolltopdata: boolean;
 }) {
   const [subMenuOpen, setSubMenuOpen] = useState(false);
-  console.log(scrolltopdata);
 
   const showSubNavigation = (e: any) => {};
   return (
@@ -22,9 +21,7 @@ export default function Navigation({
             <Link href={item.path} key={index}>
               <li
                 className={
-                  scrolltopdata
-                    ? "grid content-center text-white grid-flow-col px-8 h-[75px] text-[15px] border-b-4 border-transparent hover:border-b-4 hover:border-white font-[500] cursor-pointer"
-                    : "grid content-center text-black grid-flow-col px-8 h-[75px] text-[15px] border-b-4 border-transparent hover:border-b-4 hover:border-black font-[500] cursor-pointer"
+                    "navitem grid content-center text-black grid-flow-col duration-200 mx-4 px-4 py-2 text-[15px] rounded-[40px] border-2 border-transparent  hover:border-2 hover:border-lightgray font-[500] cursor-pointer "
                 }
                 data-hover={item.subnavIdent}
               >
@@ -35,9 +32,7 @@ export default function Navigation({
             <div>
               <li
                 className={
-                  scrolltopdata
-                    ? "grid content-center text-white  grid-flow-col px-8 h-[73px] text-[15px] border-b-2 border-transparent hover:border-b-4 hover:border-white font-[500]  group hover:bg-bermuda hover:text-white cursor-pointer"
-                    : "grid content-center text-black  grid-flow-col px-8 h-[73px] text-[15px] border-b-2 border-transparent hover:border-b-4 hover:border-black font-[500]  group hover:bg-bermuda hover:text-white cursor-pointer"
+                "navitem_dropdown grid content-center text-black grid-flow-col mx-4 px-4 py-2 text-[15px] rounded-[40px] border-2 border-transparent  hover:border-2 hover:border-lightgray font-[500] cursor-pointer"
                 }
                 data-hover={item.subnavIdent}
                 key={index}

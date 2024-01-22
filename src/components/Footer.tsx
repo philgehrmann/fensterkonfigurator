@@ -1,6 +1,58 @@
+
+"use client";
 import Link from "next/link";
+import { useRef, useState } from "react";
+
 
 export default function Footer() {
+
+  const inputRef = useRef(null);
+  const checkboxRef = useRef<HTMLInputElement>(null)
+  const [mail , setMail] = useState("")
+  const [subscribed , setSubscribed] = useState(false)
+
+  const submitForm = async(e : any)  => {
+    e.preventDefault()
+    if(checkboxRef.current!.checked) {
+    const API_KEY = process.env.MAILCHIMP_API_KEY;
+    const data = {
+      email_address: mail,
+      status: 'subscribed',
+    };
+    let jsondata = stringify(data)
+    const response = await fetch("api/subscribeuser",
+      {
+        body: jsondata,
+        headers: {
+          Authorization: `apikey ${API_KEY}`,
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      }
+    )
+    if(response.status !== 400) {
+      setSubscribed(true)
+    }
+  }}
+  
+
+    function stringify(obj :any) {
+      let cache:any= [];
+      let str:any = JSON.stringify(obj, function(key, value) {
+        if (typeof value === "object" && value !== null) {
+          if (cache.indexOf(value) !== -1) {
+            // Circular reference found, discard key
+            return;
+          }
+          // Store value in our collection
+          cache.push(value);
+        }
+        return value;
+      });
+      cache = null; // reset the cache
+      return str;
+    }
+
   return (
     <footer className=" mx-auto border-t-4 lg:border-t-8 border-bermuda bg-black">
       <div className="xl:max-w-[80%] mx-auto">
@@ -138,15 +190,21 @@ export default function Footer() {
               <h3 className="text-[18px] text-bermuda uppercase mb-0 mt-0">
                 ABONNIEREN SIE DEN NEWSLETTER
               </h3>
-              <form>
-                <input type="email" placeholder="E-Mail Adresse" />
-                <label className="form-control my-2">
-                  <input type="checkbox" name="checkbox" />
-                  Ich habe die Informationen zur Verarbeitung gemäß Art. 13 der
-                  EU-VERORDNUNG 2016/679 und genehmigen die Verarbeitung der
-                  Daten
+              <form id="newsletter" onSubmit={submitForm} className="group">
+                {!subscribed ?
+                (<><input type="email" className="invalid:text-orangelight" placeholder="E-Mail Adresse" ref={inputRef} onChange={(e) => setMail(e.target.value) } required/>
+                <label className="form-control my-2 invalid:text-orangelight">
+                  <input type="checkbox" name="checkbox" ref={checkboxRef} required className="invalid:text-orangelight"/>
+                  Ich habe die Informationen zur Verarbeitung meiner Daten in den <Link className="inline-block" href="datenschutz">Datenschutzbestimmungen</Link>  gelesen und akzeptiere diese.
                 </label>
-                <a className="btn uppercase">Abbonieren</a>
+                <button className="btn uppercase">Abbonieren</button></>
+                ):(
+                  <p className="text-[12px] my-2">
+                  Vielen Dank. Sie haben sich erfolgreich für den Newsletter angemeldet! <p className="text-[12px] mt-2">Sie erhalten nun eine Bestätigungsmail.</p>
+                  </p>
+                )
+                }
+               
               </form>
             </div>
           </div>
