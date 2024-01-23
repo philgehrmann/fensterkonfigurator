@@ -63,7 +63,7 @@ export default async function Home() {
               <span className="font-bold ">preiswerten</span>,{" "}
               <span className="font-bold ">energieeffizienten</span> Fenster
               kommen so schnell zu Ihnen nach Hause, dass sie noch bevor Sie
-              "Energieeffizienz" sagen können, bereits eingebaut sind – denn bei
+              Energieeffizienz sagen können, bereits eingebaut sind – denn bei
               uns ist nicht nur das Licht schnell, sondern auch der{" "}
               <span className="font-bold ">Service.</span>
             </p>
