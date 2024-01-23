@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { DM_Sans, Inter, Nunito_Sans, Poppins, Karla } from "next/font/google";
+import { Inter, Karla } from "next/font/google";
 import { Suspense } from "react";
+import { Providers } from "./providers";
 
 import "./globals.css";
 import Header from "../components/Header";
@@ -36,7 +37,7 @@ export default function RootLayout({
     <html lang="de">
       <body className={openSans.className + " text-black"}>
         <Header />
-        <Suspense>{children}</Suspense>
+        <Providers>{children}</Providers>
         <Footer />
       </body>
     </html>

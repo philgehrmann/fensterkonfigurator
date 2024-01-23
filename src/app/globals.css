@@ -132,10 +132,10 @@ h3 {
   }
 
   .btn {
-    @apply p-3  rounded-md mt-4 mb-4 bg-bermuda text-white w-full place-content-center cursor-pointer block text-center overflow-hidden;
+    @apply p-2 rounded-md mt-0 mb-0 px-4 text-white place-content-center cursor-pointer block text-center overflow-hidden;
   }
   .btn {
-    font-size: clamp(0.75rem, 4vw, 1.2rem);
+    font-size: clamp(0.4rem, 1vw, 0.75rem);
   }
 }
 .mobile-nav-slide-bg::after {
@@ -168,15 +168,61 @@ h3 {
   background: rgb(0, 50, 36);
 }
 
-.fenster-slider::after {
+.fenster-slider .img-wrapper::after {
   content: "";
   position: absolute;
   background: var(--after-overlay);
   width: 100vw;
-  height: 89vh;
+  height: 100vh;
   z-index: 2;
   top: 0;
   left: 0;
 }
-
-
+.navitem,
+.navitem-black {
+  position: relative;
+  overflow: hidden;
+}
+.navitem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: white;
+  width: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.navitem:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: white;
+  width: 100%;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.navitem-black::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: black;
+  width: 0;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.navitem-black:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  background: black;
+  width: 100%;
+  left: 0;
+  transition: all 0.4s ease-in-out;
+}
+.clippi {
+  clip-path: polygon(15% 0, 100% 0, 100% 100%, 0 100%);
+}
