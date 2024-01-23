@@ -7,7 +7,6 @@ import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import { Parallax } from "react-scroll-parallax";
 import ImageSlider from "@/components/ImageSlider";
-import ScrollTrigger from "react-scroll-trigger";
 import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 export default async function Home() {
