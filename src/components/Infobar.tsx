@@ -1,5 +1,9 @@
 "use client";
 import { faCheck, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebookSquare,
+  faInstagramSquare,
+} from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
@@ -8,7 +12,7 @@ import "swiper/css/autoplay";
 export default function Infobar() {
   return (
     <>
-      <div className="lg:hidden bg-[#8c2d1b] py-2">
+      <div className="xl:hidden bg-orange py-2">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}
@@ -54,10 +58,13 @@ export default function Infobar() {
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="hidden lg:block max-w-full mx-auto bg-[#8c2d1b] w-full z-[25]">
-        <div className="px-12 mx-auto py-4">
-          <div className="grid lg:grid-cols-[440px_1fr_1fr]">
-            <div className="grid grid-flow-col">
+      <div className="hidden xl:block max-w-full mx-auto bg-orange w-full z-[25]">
+        <div className="px-12 mx-auto py-2">
+          <div className="grid lg:grid-cols-[375px_1fr_1fr] items-center">
+            <div className="hidden lg:block text-white justify-items-center align-items-center text-[12px]">
+              <p>Ihre Fensterprofis im Internet</p>
+            </div>
+            <div className="grid grid-flow-col justify-self-end gap-4">
               <div>
                 <FontAwesomeIcon
                   className="inline-block pr-1 self-center text-[12px] text-white"
@@ -84,15 +91,17 @@ export default function Infobar() {
                 <span className="text-[12px] text-white">höchste Qualität</span>
               </div>
             </div>
-            <div className="hidden lg:block"></div>
             <div>
               <div className=" grid-flow-col hidden lg:grid justify-items-end">
                 <div className="cursor-pointer">
                   <FontAwesomeIcon
-                    className="inline-block pr-1 self-center text-[12px] text-white"
-                    icon={faEnvelope}
+                    className="inline-block pr-1 self-center text-[22px] text-white"
+                    icon={faFacebookSquare}
                   />{" "}
-                  <span className="text-[12px] text-white">Kontakt</span>
+                  <FontAwesomeIcon
+                    className="inline-block pr-1 self-center text-[22px] text-white"
+                    icon={faInstagramSquare}
+                  />{" "}
                 </div>
               </div>
             </div>

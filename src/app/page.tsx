@@ -4,6 +4,7 @@ import Image from "next/image";
 import MainSlider from "@/components/MainSlider";
 import Partnersection from "@/components/Parnersection";
 import Link from "next/link";
+import Produktslider from "@/components/ProduktSlider";
 import { TypeAnimation } from "react-type-animation";
 import { Parallax } from "react-scroll-parallax";
 import ImageSlider from "@/components/ImageSlider";
@@ -17,85 +18,26 @@ export default async function Home() {
   return (
     <div>
       <MainSlider page="home" />
-      <section className="grid grid-cols-1 lg:grid-cols-2  ">
-        <div className="mt-[1rem] lg:mt-[6rem] max-w-[40%] mx-auto">
-          <Parallax
-            speed={10}
-            translateY={[-5, 0]}
-            easing="easeInOut"
-            startScroll={-2000}
-            endScroll={600}
-            opacity={[0, 1]}
-          >
-            <p className="uppercase text-[16px] lg:text-[24px] mb-4 font-light">
-              01 - Fenster
-            </p>
+      <section className="-mt-[185px] lg:-mt-[240px] z-20">
+        <h2 className="h2 text-black font-bold z-[600] text-[18px] lg:text-[22px] max-w-[75%] mx-auto mb-1 relative">
+          Entdecken Sie unsere Bestseller
+        </h2>
+        <Produktslider />
+      </section>
+      <section className="">
+        <div className="mt-[1rem] lg:mt-[6rem] max-w-[80%]  text-center mx-auto">
+          <h2 className="h2">Hallo</h2>
+          <p>
+            Herzlich Willkommen bei [Ihrem Unternehmen] – Ihrem
+            vertrauenswürdigen Partner für Fensterlösungen! Wenn Sie auf der
+            Suche nach hochwertigen Fenstern zu unschlagbaren Preisen sind, sind
+            Sie bei uns genau richtig. Wir möchten Ihnen gerne einige Gründe
+            vorstellen, warum der Kauf von Fenstern bei uns die beste
+            Entscheidung für Sie ist:
+          </p>
+        </div>
+      </section>
 
-            <h2 className="uppercase text-[42px] leading-[42px] lg:text-[110px] font-bold mt-0 lg:leading-[100px] ">
-              Wir
-              <br />
-              bringen
-              <br />
-              <TypeAnimation
-                sequence={[
-                  // Same substring at the start will only be typed once, initially
-                  "Licht",
-                  2000,
-                  "Freude",
-                  2000,
-                  "Wohlfühlen",
-                  2000,
-                ]}
-                speed={2}
-                cursor={false}
-                className=" text-bermuda lg:text-[110px]"
-                repeat={Infinity}
-              />
-              <br />
-              <span className="text-[42px] leading-[42px] lg:leading-[100px] lg:text-[110px]">
-                ins dunkle
-              </span>
-            </h2>
-
-            <p className=" text-[18px] leading-[22px] lg:text-[22px] font-regular mt-0 lg:leading-[36px] lg:max-w-[75%]">
-              Unsere <span className="font-bold ">modernen</span>,{" "}
-              <span className="font-bold ">preiswerten</span>,{" "}
-              <span className="font-bold ">energieeffizienten</span> Fenster
-              kommen so schnell zu Ihnen nach Hause, dass sie noch bevor Sie
-              Energieeffizienz sagen können, bereits eingebaut sind – denn bei
-              uns ist nicht nur das Licht schnell, sondern auch der{" "}
-              <span className="font-bold ">Service.</span>
-            </p>
-          </Parallax>
-        </div>
-        <div>
-          <Parallax
-            speed={10}
-            translateY={[0, 20]}
-            translateX={[0, 0]}
-            easing="easeInOut"
-            startScroll={300}
-            endScroll={900}
-            opacity={[0, 1]}
-          >
-            <div className="lg:max-w-[60%] mx-auto h-[700px] bg-[url('/images/fenster/bg-fenster-slider.jpg')] background-center background-contain lg:mt-[8rem] window-border lg:mb-[8rem] shadow-2xl"></div>
-          </Parallax>
-        </div>
-      </section>
-      <section className="mt-[1rem] lg:mt-[6rem]">
-        <ImageSlider />
-      </section>
-      <section className="w-full">
-        <div className="content max-w-[60%] mx-auto py-24 text-center text-[18px] lg:text-[24px]">
-          <span className="font-bold ">Wir</span> stehen für{" "}
-          <span className="font-bold ">moderne</span>,
-          <span className="font-bold ">energieeffiziente Fensterlösungen</span>,
-          die nicht nur stilvolles Design verkörpern, sondern auch höchste
-          Standards in puncto{" "}
-          <span className="font-bold">Energieeinsparung</span>
-          und <span className="font-bold">Nachhaltigkeit</span> erfüllen.
-        </div>
-      </section>
       <Partnersection />
     </div>
   );

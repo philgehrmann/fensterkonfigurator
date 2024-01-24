@@ -1,0 +1,57 @@
+{
+  "bestseller": [
+    {
+      "name": "VEKA SOFTLINE 70 AD",
+      "image": "/images/veka/veka_softline70ad-8.webp",
+      "price": 149,
+      "id": "EKA SOFTLINE 70 AD",
+      "logo": "veka",
+      "details": {}
+    },
+    {
+      "name": "VEKA SWINGLINE 70 AD",
+      "image": "/images/veka/veka_softline70ad-8.webp",
+      "id": "VEKA SWINGLINE 70 AD",
+      "logo": "gea",
+      "details": {}
+    },
+    {
+      "name": "VEKA ALPHALINE 90 AD",
+      "image": "/images/veka/veka_alphaline1.webp",
+      "id": "VEKA ALPHALINE 90 AD",
+      "logo": "veka",
+      "details": {}
+    },
+    {
+      "name": "VEKA SOFTLINE 82 MD",
+      "image": "/images/veka/veka_softline82.webp",
+      "id": "VEKA SOFTLINE 82 MD",
+      "logo": "sch",
+      "details": {}
+    },
+    {
+      "name": "Fenster5",
+      "image": "/images/fenster/fenster-basic.png",
+      "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_5",
+      "details": {}
+    },
+    {
+      "name": "Fenster3",
+      "image": "/images/fenster/fenster-basic.png",
+      "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_3",
+      "details": {}
+    },
+    {
+      "name": "Fenster4",
+      "image": "/images/fenster/fenster-basic.png",
+      "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_4",
+      "details": {}
+    },
+    {
+      "name": "Fenster5",
+      "image": "/images/fenster/fenster-basic.png",
+      "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_5",
+      "details": {}
+    }
+  ]
+}

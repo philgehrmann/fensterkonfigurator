@@ -1,25 +1,55 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
-import content from "../content/mainslider.json";
+import content from "../content/bestseller.json";
+import Image from "next/image";
 import "swiper/css";
 import "swiper/css/bundle";
-export default function MainSlider() {
+export default function Produktslider() {
   return (
-    <div className="max-w-[80%] mx-auto text-center  h-[600px] my-4">
+    <div className="max-w-[90%] xl:max-w-[75%] mx-auto text-center my-4">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
-        spaceBetween={50}
-        slidesPerView={5}
+        spaceBetween={10}
+        navigation={true}
+        slidesPerView={1.5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        breakpoints={{
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            pagination: false,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+            pagination: false,
+          },
+        }}
       >
-        <SwiperSlide>
-          <img src="https://picsum.photos/seed/picsum/2000/600" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://picsum.photos/seed/picsum/2000/600" />
-        </SwiperSlide>
+        {content.bestseller.map((item, index) => {
+          return (
+            <SwiperSlide
+              key={index}
+              className="bg-white  rounded-lg text-center grid items-center justify-items-center drop-shadow-xl hover:drop-shadow-md cursor-pointer hover:scale-100"
+            >
+              <div className="w-[55px] absolute top-[10px] left-[10px]">
+                <img src={"/images/logos/logo_" + item.logo + ".webp"} />
+              </div>
+              <Image
+                src={item.image}
+                width={100}
+                height={80}
+                alt={item.id}
+                className="mx-auto"
+              />
+              <div className="justify-items-start p-4 text-left">
+                <h3 className="text-[16px] mt-2 mb-1">{item.name}</h3>
+              </div>
+            </SwiperSlide>
+          );
+        })}
       </Swiper>
     </div>
   );

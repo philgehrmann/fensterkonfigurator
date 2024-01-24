@@ -173,21 +173,38 @@ h3 {
   background: rgb(0, 50, 36);
 }
 
-.fenster-slider .img-wrapper::after {
+.fenster-slider {
   content: "";
   position: absolute;
-  background: var(--after-overlay-content);
   width: 100%;
-  height: 60vh;
   z-index: 2;
   top: 0;
   left: 0;
   bottom: 0;
 }
+.slidermask {
+  -webkit-mask-image: url("../../public/images/bgimages/blob_mobile.svg");
+  mask-image: url("../../public/images/bgimages/blob_mobile.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  mask-size: 110%;
+  mask-position: center bottom;
+}
+
+@media (max-width: 1280px) {
+  .slidermask {
+    mask-image: none;
+  }
+}
+
 .navitem,
 .navitem-black {
   position: relative;
   overflow: hidden;
+}
+.img-wrapper {
+  width: 100%;
+  height: 600px;
 }
 .navitem::after {
   content: "";

@@ -30,7 +30,7 @@ export default function Header() {
   }, []);
   return (
     <>
-      <header className="fixed w-full z-[200]">
+      <header className="xl:fixed w-full z-[200]">
         <Infobar />
         <div
           className={
@@ -43,18 +43,19 @@ export default function Header() {
             <MobileNavigation setShowNavigation={setShowNavigation} />
           )}
           <div className="grid grid-cols-2 lg:grid-cols-[10%_60%_30%] mx-auto text-black">
-            <div className="justify-self-start hidden self-center lg:block">
+            <div className="justify-self-start self-center lg:block">
               <Image
                 src="/images/logo-full-white@2x.png"
                 alt="Logo"
-                width={100}
+                width={50}
                 height={50}
               />
             </div>
-            <div className="justify-self-start hidden lg:justify-self-center pr-12 self-center lg:block">
+            <div className="justify-self-start hidden lg:justify-self-end pr-12 lg:pr-0 self-center lg:block">
               <Navigation scrolltopdata={scrolltopdata} />
             </div>
-            <div className="self-center justify-self-end border-l-[1px] border-gray pl-4">
+            <div className="xl:hidden justify-self-end">asd</div>
+            <div className="self-center hidden xl:block justify-self-end border-l-[1px] border-gray pl-4">
               <Link
                 href="/"
                 className={
