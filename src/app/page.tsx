@@ -5,10 +5,7 @@ import MainSlider from "@/components/MainSlider";
 import Partnersection from "@/components/Parnersection";
 import Link from "next/link";
 import Produktslider from "@/components/ProduktSlider";
-import { TypeAnimation } from "react-type-animation";
-import { Parallax } from "react-scroll-parallax";
-import ImageSlider from "@/components/ImageSlider";
-import { findIconDefinition } from "@fortawesome/fontawesome-svg-core";
+import Marquee from "react-fast-marquee";
 
 export default async function Home() {
   useEffect(() => {
@@ -23,6 +20,45 @@ export default async function Home() {
           Entdecken Sie unsere Bestseller
         </h2>
         <Produktslider />
+      </section>
+      <section className="mt-[1rem] lg:mt-[6rem] max-w-[80%]  text-center mx-auto">
+        <Marquee gradient={true}>
+          <Image
+            src="/images/logos/logo_sch.webp"
+            width={300}
+            height={300}
+            alt="Schueco Fenster"
+            className="filter-black"
+          ></Image>
+          <Image
+            src="/images/logos/logo_veka.webp"
+            width={300}
+            height={300}
+            alt="Schueco Fenster"
+            className="filter-black"
+          ></Image>
+          <Image
+            src="/images/logos/logo_kom.webp"
+            width={300}
+            height={300}
+            alt="Schueco Fenster"
+            className="filter-black"
+          ></Image>
+          <Image
+            src="/images/logos/logo_sala.webp"
+            width={300}
+            height={300}
+            alt="Schueco Fenster"
+            className="filter-black"
+          ></Image>
+          <Image
+            src="/images/logos/logo_gea.webp"
+            width={300}
+            height={300}
+            alt="Schueco Fenster"
+            className="filter-black"
+          ></Image>
+        </Marquee>
       </section>
       <section className="">
         <div className="mt-[1rem] lg:mt-[6rem] max-w-[80%]  text-center mx-auto">

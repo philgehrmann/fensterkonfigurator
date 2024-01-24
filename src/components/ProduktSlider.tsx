@@ -15,6 +15,7 @@ export default function Produktslider() {
         slidesPerView={1.5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
+        className="pb-4"
         breakpoints={{
           768: {
             slidesPerView: 3,
@@ -32,7 +33,7 @@ export default function Produktslider() {
           return (
             <SwiperSlide
               key={index}
-              className="bg-white  rounded-lg text-center grid items-center justify-items-center drop-shadow-xl hover:drop-shadow-md cursor-pointer hover:scale-100"
+              className="bg-white  rounded-lg text-center grid items-center justify-items-center mb-4 drop-shadow-xl hover:drop-shadow-xl cursor-pointer hover:scale-100"
             >
               <div className="w-[55px] absolute top-[10px] left-[10px]">
                 <img src={"/images/logos/logo_" + item.logo + ".webp"} />

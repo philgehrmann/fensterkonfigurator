@@ -197,6 +197,10 @@ h3 {
   }
 }
 
+.filter-black {
+  filter: grayscale(100%);
+}
+
 .navitem,
 .navitem-black {
   position: relative;
