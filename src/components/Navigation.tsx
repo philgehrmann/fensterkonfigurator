@@ -22,7 +22,7 @@ export default function Navigation({
               <li
                 className={
                   scrolltopdata
-                    ? "navitem grid content-center text-white grid-flow-col uppercase duration-200 mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer "
+                    ? "navitem grid content-center text-black grid-flow-col uppercase duration-200 mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer "
                     : "navitem-black grid content-center text-black grid-flow-col uppercase duration-200 mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer "
                 }
                 data-hover={item.subnavIdent}
@@ -35,7 +35,7 @@ export default function Navigation({
               <li
                 className={
                   scrolltopdata
-                    ? "navitem grid content-center text-white uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
+                    ? "navitem grid content-center text-black uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
                     : "navitem-black grid content-center text-black uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
                 }
                 data-hover={item.subnavIdent}

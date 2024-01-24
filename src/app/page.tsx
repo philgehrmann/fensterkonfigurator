@@ -18,12 +18,12 @@ export default async function Home() {
     <div>
       <MainSlider page="home" />
       <section className="grid grid-cols-1 lg:grid-cols-2  ">
-        <div className="mt-[1rem] lg:mt-[6rem] max-w-[80%] mx-auto">
+        <div className="mt-[1rem] lg:mt-[6rem] max-w-[40%] mx-auto">
           <Parallax
             speed={10}
             translateY={[-5, 0]}
             easing="easeInOut"
-            startScroll={300}
+            startScroll={-2000}
             endScroll={600}
             opacity={[0, 1]}
           >
@@ -78,14 +78,14 @@ export default async function Home() {
             endScroll={900}
             opacity={[0, 1]}
           >
-            <div className="lg:max-w-[60%] mx-auto h-[700px] bg-[url('/images/fenster/bg-fenster-slider-before.jpg')] background-center lg:mt-[8rem] shadow-2xl"></div>
+            <div className="lg:max-w-[60%] mx-auto h-[700px] bg-[url('/images/fenster/bg-fenster-slider.jpg')] background-center background-contain lg:mt-[8rem] window-border lg:mb-[8rem] shadow-2xl"></div>
           </Parallax>
         </div>
       </section>
       <section className="mt-[1rem] lg:mt-[6rem]">
         <ImageSlider />
       </section>
-      <section className="w-full bg-lightgray">
+      <section className="w-full">
         <div className="content max-w-[60%] mx-auto py-24 text-center text-[18px] lg:text-[24px]">
           <span className="font-bold ">Wir</span> stehen für{" "}
           <span className="font-bold ">moderne</span>,

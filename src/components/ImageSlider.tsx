@@ -31,7 +31,7 @@ export default function ImageSlider() {
         >
           <SwiperSlide key={1} className="group relative overflow-hidden">
             <Image
-              src={"/images/fenster/bg-fenster-slider-before.jpg"}
+              src={"/images/fenster/bg-fenster-slider.jpg"}
               alt={"Fenster - Neubauwohnung Energieeffizient"}
               width={1300}
               height={1000}
@@ -42,26 +42,26 @@ export default function ImageSlider() {
               Aluminiumfenster
             </h2>
           </SwiperSlide>
-          <SwiperSlide key={2} className="relative">
+          <SwiperSlide key={2} className="relative overflow-hidden">
             <Image
               src={"/images/fenster/bg-fenster-slider-before.jpg"}
               alt={"Fenster - Neubauwohnung Energieeffizient"}
-              width={1000}
+              width={1300}
               height={1000}
-              className=""
+              className="hover:scale-125 -z-[1] transition-all duration-1000 ease-in-out"
             />
             <h2 className="absolute uppercase text-[16px] text-white lg:text-[24px] mb-0 font-light left-[5%] bottom-[5%] z-[1]">
               <p className="text-left mb-0">02</p>
               Kunsstofffenster
             </h2>
           </SwiperSlide>
-          <SwiperSlide key={2} className="relative">
+          <SwiperSlide key={2} className="relative overflow-hidden">
             <Image
               src={"/images/fenster/bg-fenster-slider-before.jpg"}
               alt={"Fenster - Neubauwohnung Energieeffizient"}
-              width={1000}
+              width={1300}
               height={1000}
-              className=""
+              className="hover:scale-125 -z-[1] transition-all duration-1000 ease-in-out"
             />
           </SwiperSlide>
         </Swiper>

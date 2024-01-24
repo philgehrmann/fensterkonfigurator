@@ -3,9 +3,14 @@ import { useState, useEffect } from "react";
 import Navigation from "./Navigation";
 import MobileNavigation from "./MobileNavigation";
 import Link from "next/link";
-import { faCalendar, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faCalendar,
+  faPhone,
+  faSliders,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
+import Infobar from "./Infobar";
 
 export default function Header() {
   const [showNavigation, setShowNavigation] = useState(false);
@@ -14,7 +19,7 @@ export default function Header() {
   useEffect(() => {
     setscrolltopdata(true);
     let elem = document.querySelector(".mainslider");
-    let rect = elem!.getBoundingClientRect().height - 60;
+    let rect = elem!.getBoundingClientRect().height;
     window.addEventListener("scroll", () => {
       if (window.scrollY > rect) {
         setscrolltopdata(false);
@@ -25,47 +30,68 @@ export default function Header() {
   }, []);
   return (
     <>
-      <header
-        className={
-          scrolltopdata
-            ? "max-w-full mx-auto  fixed w-full z-[200] px-24 pb-12 pt-12  transition-all  ease-in-out top-0"
-            : "max-w-full mx-auto  fixed w-full z-[200] px-24 pb-2 pt-2  bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
-        }
-      >
-        {showNavigation && (
-          <MobileNavigation setShowNavigation={setShowNavigation} />
-        )}
-        <div className="grid grid-cols-2 lg:grid-cols-[20%_60%_20%] mx-auto text-black">
-          <div className="justify-self-start hidden self-center lg:block">
-            <Image
-              src="/images/logo-full-white@2x.png"
-              alt="Logo"
-              width={100}
-              height={50}
-            />
-          </div>
-          <div className="justify-self-start hidden lg:justify-self-center pr-12 self-center lg:block">
-            <Navigation scrolltopdata={scrolltopdata} />
-          </div>
-          <div className="self-center justify-self-end">
-            <Link
-              href="/"
-              className={
-                scrolltopdata
-                  ? " cursor-pointer border-[1px] w-[200px] border-lightgray bg-transparent btn"
-                  : "cursor-pointer bg-black btn"
-              }
-            >
-              <FontAwesomeIcon
+      <header className="fixed w-full z-[200]">
+        <Infobar />
+        <div
+          className={
+            scrolltopdata
+              ? "max-w-full mx-auto w-full z-[200] px-6 pb-6 pt-6 bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
+              : "max-w-full mx-auto w-full z-[200] px-6 pb-2 pt-2  bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
+          }
+        >
+          {showNavigation && (
+            <MobileNavigation setShowNavigation={setShowNavigation} />
+          )}
+          <div className="grid grid-cols-2 lg:grid-cols-[10%_60%_30%] mx-auto text-black">
+            <div className="justify-self-start hidden self-center lg:block">
+              <Image
+                src="/images/logo-full-white@2x.png"
+                alt="Logo"
+                width={100}
+                height={50}
+              />
+            </div>
+            <div className="justify-self-start hidden lg:justify-self-center pr-12 self-center lg:block">
+              <Navigation scrolltopdata={scrolltopdata} />
+            </div>
+            <div className="self-center justify-self-end border-l-[1px] border-gray pl-4">
+              <Link
+                href="/"
                 className={
                   scrolltopdata
-                    ? "inline-block pr-4 text-[12px]"
-                    : "inline-block pr-4 text-[12px]"
+                    ? "cursor-pointer  w-auto border-[1px] border-lightgray bg-orange btn inline-block"
+                    : "cursor-pointer ml-2 border-[1px] border-lightgray bg-orange btn mr-1 inline-block"
                 }
-                icon={faPhone}
-              />
-              Jetzt Termin vereinbaren
-            </Link>
+              >
+                <FontAwesomeIcon
+                  className={
+                    scrolltopdata
+                      ? "inline-block pr-4 text-[12px]"
+                      : "inline-block p-1 text-[12px]"
+                  }
+                  icon={faSliders}
+                />
+                {scrolltopdata && "Fenster konfigurieren"}
+              </Link>
+              <Link
+                href="/"
+                className={
+                  scrolltopdata
+                    ? " cursor-pointer  border-[1px] border-lightgray bg-orange btn inline-block"
+                    : "cursor-pointer border-[1px]  border-lightgray bg-orange btn  btn inline-block"
+                }
+              >
+                <FontAwesomeIcon
+                  className={
+                    scrolltopdata
+                      ? "inline-block pr-4 text-[12px]"
+                      : "inline-block p-1 text-[12px]"
+                  }
+                  icon={faPhone}
+                />
+                {scrolltopdata && "Jetzt Termin vereinbaren"}
+              </Link>
+            </div>
           </div>
         </div>
       </header>

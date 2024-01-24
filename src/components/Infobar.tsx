@@ -8,7 +8,7 @@ import "swiper/css/autoplay";
 export default function Infobar() {
   return (
     <>
-      <div className="lg:hidden bg-black py-2">
+      <div className="lg:hidden bg-[#8c2d1b] py-2">
         <Swiper
           modules={[Autoplay]}
           spaceBetween={0}
@@ -36,7 +36,7 @@ export default function Infobar() {
             data-swiper-autoplay="4000"
           >
             <FontAwesomeIcon
-              className="inline-block pr-1 self-center text-[12px] text-bermuda"
+              className="inline-block pr-1 self-center text-[12px] text-white"
               icon={faCheck}
             />{" "}
             <span className="text-[12px] text-white">schnelle Abwicklung</span>
@@ -47,20 +47,20 @@ export default function Infobar() {
             data-swiper-autoplay="4000"
           >
             <FontAwesomeIcon
-              className="inline-block pr-1 self-center text-[12px] text-bermuda"
+              className="inline-block pr-1 self-center text-[12px] text-white"
               icon={faCheck}
             />{" "}
             <span className="text-[12px] text-white">höchste Qualität</span>
           </SwiperSlide>
         </Swiper>
       </div>
-      <div className="hidden lg:block max-w-full mx-auto bg-black w-full z-[25]">
+      <div className="hidden lg:block max-w-full mx-auto bg-[#8c2d1b] w-full z-[25]">
         <div className="px-12 mx-auto py-4">
           <div className="grid lg:grid-cols-[440px_1fr_1fr]">
             <div className="grid grid-flow-col">
               <div>
                 <FontAwesomeIcon
-                  className="inline-block pr-1 self-center text-[12px] text-bermuda"
+                  className="inline-block pr-1 self-center text-[12px] text-white"
                   icon={faCheck}
                 />{" "}
                 <span className="text-[12px] text-white">
@@ -69,7 +69,7 @@ export default function Infobar() {
               </div>
               <div>
                 <FontAwesomeIcon
-                  className="inline-block pr-1 self-center text-[12px] text-bermuda"
+                  className="inline-block pr-1 self-center text-[12px] text-white"
                   icon={faCheck}
                 />{" "}
                 <span className="text-[12px] text-white">
@@ -78,7 +78,7 @@ export default function Infobar() {
               </div>
               <div>
                 <FontAwesomeIcon
-                  className="inline-block pr-1 self-center text-[12px] text-bermuda"
+                  className="inline-block pr-1 self-center text-[12px] text-white"
                   icon={faCheck}
                 />{" "}
                 <span className="text-[12px] text-white">höchste Qualität</span>
@@ -89,7 +89,7 @@ export default function Infobar() {
               <div className=" grid-flow-col hidden lg:grid justify-items-end">
                 <div className="cursor-pointer">
                   <FontAwesomeIcon
-                    className="inline-block pr-1 self-center text-[12px] text-bermuda"
+                    className="inline-block pr-1 self-center text-[12px] text-white"
                     icon={faEnvelope}
                   />{" "}
                   <span className="text-[12px] text-white">Kontakt</span>
