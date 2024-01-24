@@ -15,7 +15,7 @@ export default async function Home() {
   return (
     <div>
       <MainSlider page="home" />
-      <section className="-mt-[185px] lg:-mt-[240px] z-20">
+      <section className="-mt-[185px] lg:-mt-[100px] z-20">
         <h2 className="h2 text-black font-bold z-[600] text-[18px] lg:text-[22px] max-w-[75%] mx-auto mb-1 relative">
           Entdecken Sie unsere Bestseller
         </h2>

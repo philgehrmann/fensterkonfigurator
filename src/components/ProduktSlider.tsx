@@ -7,25 +7,27 @@ import "swiper/css";
 import "swiper/css/bundle";
 export default function Produktslider() {
   return (
-    <div className="max-w-[90%] xl:max-w-[75%] mx-auto text-center my-4">
+    <div className="max-w-[90%] xl:max-w-[75%] mx-auto text-center my-4 ml-12 xl:ml-0">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={10}
-        navigation={true}
+        pagination={true}
         slidesPerView={1.5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
-        className="pb-4"
+        className="pb-4 "
         breakpoints={{
           768: {
             slidesPerView: 3,
             spaceBetween: 10,
             pagination: false,
+            navigation: true,
           },
           1024: {
             slidesPerView: 5,
             spaceBetween: 20,
             pagination: false,
+            navigation: true,
           },
         }}
       >

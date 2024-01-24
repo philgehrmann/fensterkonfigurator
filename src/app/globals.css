@@ -173,15 +173,6 @@ h3 {
   background: rgb(0, 50, 36);
 }
 
-.fenster-slider {
-  content: "";
-  position: absolute;
-  width: 100%;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
 .slidermask {
   -webkit-mask-image: url("../../public/images/bgimages/blob_mobile.svg");
   mask-image: url("../../public/images/bgimages/blob_mobile.svg");
