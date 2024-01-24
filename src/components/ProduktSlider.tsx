@@ -7,11 +7,11 @@ import "swiper/css";
 import "swiper/css/bundle";
 export default function Produktslider() {
   return (
-    <div className="max-w-[90%] xl:max-w-[75%] mx-auto text-center my-4 ml-12 xl:ml-0">
+    <div className="max-w-[90%] xl:max-w-[75%]  text-center my-4 ml-12 xl:mx-auto">
       <Swiper
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={10}
-        pagination={true}
+        navigation={true}
         slidesPerView={1.5}
         onSlideChange={() => console.log("slide change")}
         onSwiper={(swiper) => console.log(swiper)}
@@ -20,13 +20,11 @@ export default function Produktslider() {
           768: {
             slidesPerView: 3,
             spaceBetween: 10,
-            pagination: false,
             navigation: true,
           },
           1024: {
             slidesPerView: 5,
             spaceBetween: 20,
-            pagination: false,
             navigation: true,
           },
         }}
@@ -45,8 +43,9 @@ export default function Produktslider() {
                 width={100}
                 height={80}
                 alt={item.id}
-                className="mx-auto"
+                className="mx-auto w-[100px] h-[130px] "
               />
+
               <div className="justify-items-start p-4 text-left">
                 <h3 className="text-[16px] mt-2 mb-1">{item.name}</h3>
               </div>
