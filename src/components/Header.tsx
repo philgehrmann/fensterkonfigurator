@@ -18,19 +18,21 @@ export default function Header() {
 
   useEffect(() => {
     setscrolltopdata(true);
-    let elem = document.querySelector(".mainslider");
-    let rect = elem!.getBoundingClientRect().height;
-    window.addEventListener("scroll", () => {
-      if (window.scrollY > rect) {
-        setscrolltopdata(false);
-      } else {
-        setscrolltopdata(true);
-      }
-    });
+    let elem = document.querySelector(".mainslider") || undefined;
+    if (elem !== undefined) {
+      let rect = elem!.getBoundingClientRect().height;
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > rect) {
+          setscrolltopdata(false);
+        } else {
+          setscrolltopdata(true);
+        }
+      });
+    }
   }, []);
   return (
     <>
-      <header className="xl:fixed w-full z-[200]">
+      <header className="xl:fixed top-0 w-full z-[200]">
         <Infobar />
         <div
           className={

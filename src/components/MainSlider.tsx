@@ -30,8 +30,6 @@ export default function MainSlider({ page }: { page: any }) {
           disableOnInteraction: false,
         }}
         slidesPerView={1}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
         className="mx-auto fenster-slider relative mb-24 lg:h-[100vh]"
         breakpoints={{
           768: {
@@ -50,7 +48,7 @@ export default function MainSlider({ page }: { page: any }) {
         {content.mainslider.map((item, index) => {
           return (
             item.page === page && (
-              <>
+              <div key={index}>
                 {item.slides.map((slide, index) => {
                   return (
                     <SwiperSlide
@@ -67,9 +65,9 @@ export default function MainSlider({ page }: { page: any }) {
 
                                   "einfach,",
                                   10,
-                                  "einfach, schnell,",
+                                  "einfach, preiswert,",
                                   10,
-                                  "einfach, schnell, unkompliziert",
+                                  "einfach, preiswert, unkompliziert",
                                   10,
                                 ]}
                                 speed={20}
@@ -125,7 +123,7 @@ export default function MainSlider({ page }: { page: any }) {
                     </SwiperSlide>
                   );
                 })}
-              </>
+              </div>
             )
           );
         })}

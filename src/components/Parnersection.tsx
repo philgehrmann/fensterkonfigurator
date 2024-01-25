@@ -30,8 +30,6 @@ export default function Partnersection() {
           }}
           grabCursor={true}
           loop={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
           className="text-center h-[300px]"
           breakpoints={{
             768: {
@@ -57,7 +55,7 @@ export default function Partnersection() {
             />
           </SwiperSlide>
           <SwiperSlide
-            key={1}
+            key={2}
             className="relative h-[300px] flex justify-items-center content-center "
           >
             <Image
@@ -68,7 +66,7 @@ export default function Partnersection() {
               className="mx-auto"
             />
           </SwiperSlide>
-          <SwiperSlide key={1} className="relative h-[300px]">
+          <SwiperSlide key={3} className="relative h-[300px]">
             <Image
               src="/images/partner/veka.jpeg"
               alt="Veka Logo"

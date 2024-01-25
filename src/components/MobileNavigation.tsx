@@ -43,13 +43,7 @@ export default function MobileNavigation({
 
           <div className="mb-12 pl-12">
             <div>
-              <Swiper
-                modules={[]}
-                spaceBetween={15}
-                slidesPerView={2.5}
-                onSlideChange={() => console.log("slide change")}
-                onSwiper={(swiper) => console.log(swiper)}
-              >
+              <Swiper modules={[]} spaceBetween={15} slidesPerView={2.5}>
                 <SwiperSlide className="mobile-nav-slide-bg rounded-xl relative h-[75px] shadow-2xl">
                   <Image
                     src="https://picsum.photos/seed/picsum/400/400"

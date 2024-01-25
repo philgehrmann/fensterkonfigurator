@@ -1,13 +1,13 @@
 {
   "fenster": [
     {
-      "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
+      "id": "VEKA_SOFTLINE_70_AD",
       "details": [
         {
-          "name": "THERMOMAX 5 CLASSIC KUNSTSTOFFFENSTER",
+          "name": "VEKA SOFTLINE 70 AD",
           "image": [
             {
-              "src": "/images/fenster/fenster-basic.png",
+              "src": "/images/veka/veka_softline70ad-8.webp",
               "alt": ""
             },
             {
@@ -16,8 +16,8 @@
             }
           ],
           "price": 149,
-          "linkname": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
-          "details": {}
+          "beschreibung": "SOFTLINE 70 AD mit 70 mm Basis-Bautiefe ist der Klassiker im VEKA Profilsortiment. Sein zeitloses Design mit der leicht abgerundeten Kontur und besonders geringen Ansichtsbreiten findet sich auch in den nachfolgenden Profilgenerationen wieder. Wie alle VEKA Systeme bietet SOFTLINE 70 AD mit einem umfassenden Programm an Zusatzprofilen eine große Vielfalt von Konstruktionsmöglichkeiten bei effizienter Fensterfertigung. Sogar hochisolierende Dreifachverglasungen sind bei nicht zu großen Flügelmaßen in SOFTLINE 70 AD verwendbar.",
+          "linkname": "VEKA_SOFTLINE_70_AD"
         }
       ]
     }

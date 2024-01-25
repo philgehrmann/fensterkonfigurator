@@ -15,8 +15,6 @@ export default function ImageSlider() {
           freeMode={true}
           grabCursor={true}
           slidesPerView={1.25}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
           className="lg:h-[600px]"
           breakpoints={{
             768: {

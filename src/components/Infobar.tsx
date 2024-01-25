@@ -18,8 +18,6 @@ export default function Infobar() {
           spaceBetween={0}
           slidesPerView={1}
           autoplay={true}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide
             key={1}

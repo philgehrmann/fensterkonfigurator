@@ -1,6 +1,7 @@
 import content from "../../../content/fensterdetail.json";
 import type { Metadata, ResolvingMetadata } from "next";
 import Image from "next/image";
+import MainSlider from "@/components/MainSlider";
 import DetailImageSlider from "@/components/DetailImageSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -35,7 +36,7 @@ export default function Page({ params }: { params: { slug: string } }) {
   let windowContent = content.fenster.filter((item) => item.id === params.slug);
 
   return (
-    <section className="lg:max-w-[80%] mx-auto mt-[100px] lg:mt-[150px]">
+    <section className="lg:max-w-[80%] mx-auto lg:mt-[150px]">
       <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] w-full lg:p-12 text-white">
         <div className="image-layer">
           <DetailImageSlider article={windowContent} />
@@ -54,22 +55,7 @@ export default function Page({ params }: { params: { slug: string } }) {
           <h3 className="mb-4 text-bermuda pb-2 border-b-2 border-width-[50%] border-bermuda">
             Produktbeschreibung
           </h3>
-          <p>
-            Entdecken Sie unser exklusives Fensterdesign, das nicht nur
-            Funktionalität, sondern auch Ästhetik auf höchstem Niveau bietet.
-            Mit modernster Technologie und hochwertigen Materialien gefertigt,
-            erfüllt dieses Fenster die anspruchsvollsten Anforderungen an
-            Energieeffizienz und Stil. Die mehrfachverglasten Fensterscheiben
-            sorgen für eine optimale Wärme- und Schalldämmung, wodurch Ihr
-            Zuhause nicht nur energieeffizienter, sondern auch ruhiger wird. Die
-            edle Rahmenkonstruktion aus robustem Material gewährleistet nicht
-            nur Stabilität, sondern verleiht dem Fenster auch eine zeitlose
-            Eleganz. Die innovative Öffnungsmechanik ermöglicht eine mühelose
-            Bedienung, während die hochwertige Verarbeitung eine lange
-            Lebensdauer gewährleistet. Genießen Sie mit unserem Fenster nicht
-            nur eine optimale Lichtdurchlässigkeit, sondern auch einen
-            unvergleichlichen Blick nach draußen.
-          </p>
+          <p>{windowContent[0].details[0].beschreibung}</p>
         </div>
       </div>
     </section>

@@ -10,9 +10,6 @@ export default function Navigation({
 }: {
   scrolltopdata: boolean;
 }) {
-  const [subMenuOpen, setSubMenuOpen] = useState(false);
-
-  const showSubNavigation = (e: any) => {};
   return (
     <>
       <ul className="grid grid-flow-col justify-self-center" key="navigation">
@@ -25,22 +22,19 @@ export default function Navigation({
                     ? "navitem grid content-center text-black grid-flow-col uppercase duration-200 mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer "
                     : "navitem-black grid content-center text-black grid-flow-col uppercase duration-200 mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer "
                 }
-                data-hover={item.subnavIdent}
               >
                 {item.name}
               </li>
             </Link>
           ) : (
-            <div>
+            <div key={index}>
               <li
                 className={
                   scrolltopdata
                     ? "navitem grid content-center text-black uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
                     : "navitem-black grid content-center text-black uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
                 }
-                data-hover={item.subnavIdent}
                 key={index}
-                onMouseEnter={(e) => showSubNavigation(e)}
               >
                 {item.name}
               </li>

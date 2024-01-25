@@ -38,8 +38,6 @@ export default function Page() {
                       spaceBetween: 25,
                     },
                   }}
-                  onSlideChange={() => console.log("slide change")}
-                  onSwiper={(swiper) => console.log(swiper)}
                 >
                   {item.fenster.map((window, index) => {
                     return (

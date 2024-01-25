@@ -12,8 +12,6 @@ export default function DetailImageSlider({ article }: { article: any }) {
           modules={[Pagination, Virtual]}
           spaceBetween={0}
           slidesPerView={1}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
           className=""
           virtual
         >
