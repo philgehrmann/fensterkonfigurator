@@ -20,7 +20,7 @@ const config: Config = {
       'bermuda': '#78dcca',
       'black': '#202020',
       'gray': '#e8e8e8',
-      'orange': '#c82778',
+      'orange': '#c9604e',
       'orangelight': '#c9604e',
       'lightgray': '#f7f7f7'
     },
