@@ -114,6 +114,7 @@ export default function MainSlider({ page }: { page: any }) {
                               src={slide.image}
                               alt={slide.name}
                               width={1600}
+                              priority={true}
                               height={800}
                               className=" w-full left-0 -right-0 top-0 bottom-0 z-[2] slidermask"
                             />
