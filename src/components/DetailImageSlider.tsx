@@ -12,6 +12,7 @@ export default function DetailImageSlider({ article }: { article: any }) {
           modules={[Pagination, Virtual]}
           spaceBetween={0}
           slidesPerView={1}
+          pagination={true}
           className=""
           virtual
         >

@@ -20,7 +20,7 @@ const cabin = Cabin({
 
 export default function MainSlider({ page }: { page: any }) {
   return (
-    <div className="w-full mx-auto  text-center pb-24 mb-12 mainslider relative top-[0px] xl:top-[133px] bg-white border-black">
+    <div className="w-full mx-auto  text-center pb-24 mb-12 mainslider relative top-[0px] xl:top-[133px]  border-black">
       <Swiper
         pagination={true}
         modules={[Pagination, Virtual, Autoplay]}
@@ -51,10 +51,7 @@ export default function MainSlider({ page }: { page: any }) {
               <div key={index}>
                 {item.slides.map((slide, index) => {
                   return (
-                    <SwiperSlide
-                      key={index}
-                      className="relative lg:h-[100vh] bg-white"
-                    >
+                    <SwiperSlide key={index} className="relative lg:h-[100vh]">
                       <div className="grid lg:grid-cols-2 w-full">
                         <div className="text-white z-[800] mx-auto w-[100%] h-[full] ">
                           <div className="h-full pt-80 lg:pt-64 ml-6 lg:ml-12">
@@ -79,7 +76,7 @@ export default function MainSlider({ page }: { page: any }) {
                             <h2 className=" lg:ml-[25%] uppercase text-[42px] text-left leading-[42px] lg:text-[72px] text-black font-bold mt-0 mb-0 lg:leading-[72px] w-full lg:w-[90%]">
                               Jetzt Ihre
                               <br />
-                              <span className="text-[42px] leading-[42px] lg:leading-[72px] lg:text-[72px] text-ora">
+                              <span className="text-[42px] leading-[42px] lg:leading-[72px] lg:text-[72px] text-orange">
                                 Traumfenster
                               </span>{" "}
                               <br />
@@ -92,7 +89,7 @@ export default function MainSlider({ page }: { page: any }) {
                               Ihre Immobilie und lassen Sie sich ein
                               unverbindliches Angebot erstellen.
                             </p>
-                            <section className="text-left ml-[25%] pb-[50px] lg:pb-0">
+                            <section className="text-left lg:ml-[25%] pb-[50px] lg:pb-0">
                               <Link
                                 href="konfigurator"
                                 className="btn bg-orange w-auto inline text-[16px] p-4"
@@ -116,9 +113,6 @@ export default function MainSlider({ page }: { page: any }) {
                               width={1600}
                               priority={true}
                               height={800}
-                              sizes="(min-width: 60em) 24vw,
-                              (min-width: 28em) 45vw,
-                              100vw"
                               className=" w-full left-0 -right-0 top-0 bottom-0 z-[2] slidermask"
                             />
                           </Parallax>

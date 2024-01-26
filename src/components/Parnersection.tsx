@@ -1,12 +1,11 @@
 "use client";
 import Link from "next/link";
-import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
-import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css/effect-coverflow";
+import Marquee from "react-fast-marquee";
 export default function Partnersection() {
   return (
-    <section className="w-full bg-white mt-6 mb-6 g:mt-12 lg:mb-12 ">
+    <section className="w-full mt-6 mb-6 g:mt-12 lg:mb-12 ">
       <div className="lg:max-w-[60%] mx-auto ">
         <div className="p-12">
           <h3 className="font-bold mb-2">Hersteller</h3>
@@ -19,63 +18,45 @@ export default function Partnersection() {
             Sortiment.
           </p>
         </div>
-        <Swiper
-          modules={[Pagination, Autoplay]}
-          spaceBetween={0}
-          slidesPerView={1}
-          pagination={true}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          grabCursor={true}
-          loop={true}
-          className="text-center h-[300px]"
-          breakpoints={{
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 15,
-            },
-            1024: {
-              slidesPerView: 3,
-              spaceBetween: 25,
-            },
-          }}
-        >
-          <SwiperSlide
-            key={1}
-            className="relative flex justify-items-center content-center h-[300px]"
-          >
+        <section className="mt-[1rem] lg:mt-[6rem] text-center mx-auto">
+          <Marquee gradient={true}>
             <Image
-              src="/images/partner/aluplast.jpg"
-              alt="Aluplast Logo"
+              src="/images/logos/logo_sch.webp"
               width={200}
               height={200}
-              className="mx-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide
-            key={2}
-            className="relative h-[300px] flex justify-items-center content-center "
-          >
+              alt="Schueco Fenster"
+              className="filter-black"
+            ></Image>
             <Image
-              src="/images/partner/schueco.jpeg"
-              alt="Schüco Logo"
+              src="/images/logos/logo_veka.webp"
               width={200}
               height={200}
-              className="mx-auto"
-            />
-          </SwiperSlide>
-          <SwiperSlide key={3} className="relative h-[300px]">
+              alt="Schueco Fenster"
+              className="filter-black"
+            ></Image>
             <Image
-              src="/images/partner/veka.jpeg"
-              alt="Veka Logo"
-              width={100}
-              height={100}
-              className="mx-auto"
-            />
-          </SwiperSlide>
-        </Swiper>
+              src="/images/logos/logo_kom.webp"
+              width={200}
+              height={200}
+              alt="Schueco Fenster"
+              className="filter-black"
+            ></Image>
+            <Image
+              src="/images/logos/logo_sala.webp"
+              width={200}
+              height={200}
+              alt="Schueco Fenster"
+              className="filter-black"
+            ></Image>
+            <Image
+              src="/images/logos/logo_gea.webp"
+              width={200}
+              height={200}
+              alt="Schueco Fenster"
+              className="filter-black"
+            ></Image>
+          </Marquee>
+        </section>
       </div>
     </section>
   );

@@ -37,8 +37,8 @@ export default function Header() {
         <div
           className={
             scrolltopdata
-              ? "max-w-full mx-auto w-full z-[200] px-6 pb-6 pt-6 bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
-              : "max-w-full mx-auto w-full z-[200] px-6 pb-2 pt-2  bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
+              ? "max-w-full mx-auto w-full z-[200] p-4 lg:p-4  lg:relative bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
+              : "max-w-full mx-auto w-full z-[200] px-4 pb-4 pt-4 lg:p-4 fixed lg:relative bg-white transition-all  border-[1px] border-gray ease-in-out top-0"
           }
         >
           {showNavigation && (
