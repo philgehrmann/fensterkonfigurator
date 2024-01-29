@@ -1,0 +1,44 @@
+{
+  "variants": [
+    {
+      "id": 1,
+      "variants": [
+        {
+          "id": "11",
+          "name": "Fest",
+          "preis": "0.26325"
+        },
+        {
+          "id": "12",
+          "name": "Fester Flügel",
+          "preis": "0.37"
+        },
+        {
+          "id": "13",
+          "name": "Dreh Links",
+          "preis": "0.46"
+        },
+        {
+          "id": "14",
+          "name": "Dreh Rechts",
+          "preis": "0.46"
+        },
+        {
+          "id": "15",
+          "name": "Kipp",
+          "preis": "0.43"
+        },
+        {
+          "id": "16",
+          "name": "Dreh-Kipp Links",
+          "preis": "0.51"
+        },
+        {
+          "id": "17",
+          "name": "Dreh-Kipp Rechts",
+          "preis": "0.51"
+        }
+      ]
+    }
+  ]
+}
