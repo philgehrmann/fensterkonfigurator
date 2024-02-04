@@ -6,7 +6,11 @@
         {
           "id": "11",
           "name": "Fest",
-          "preis": "0.26325"
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         },
         {
           "id": "12",
@@ -37,6 +41,20 @@
           "id": "17",
           "name": "Dreh-Kipp Rechts",
           "preis": "0.51"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "variants": [
+        {
+          "id": "11",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         }
       ]
     }

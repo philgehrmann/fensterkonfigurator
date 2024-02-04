@@ -3,11 +3,60 @@
     {
       "id": 1,
       "name": "Drutex",
+      "image": "/images/logos/logo_drutex.webp",
+      "konfiguration": [
+        {
+          "id": 1,
+          "name": "Iglo 5",
+          "image": "",
+          "variants": [
+            {
+              "1d": ["11", "12", "13", "14", "15", "16", "17"]
+            },
+            {
+              "2d": ["11", "12", "13", "14", "15", "16", "17"]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Iglo Energy Classic",
+          "image": "",
+          "variants": [
+            {
+              "1d": ["11", "12", "13", "14", "15", "16", "17"]
+            },
+            {
+              "2d": ["11", "12", "13", "14", "15", "16", "17"]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Veka",
+      "image": "/images/logos/logo_veka.webp",
       "konfiguration": [
         {
           "1": [
             {
-              "name": "Iglo 5 Classic",
+              "name": "Iglo 5",
+              "image": "",
+              "variants": [
+                {
+                  "1d": ["11", "12", "13", "14", "15", "16", "17"]
+                },
+                {
+                  "2d": ["11", "12", "13", "14", "15", "16", "17"]
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "name": "Iglo Energy Classic",
+              "image": "",
               "variants": [
                 {
                   "1d": ["11", "12", "13", "14", "15", "16", "17"]

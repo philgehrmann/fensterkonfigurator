@@ -6,87 +6,79 @@ import Hersteller from "./components/Hersteller";
 import Fenster from "./components/Fenster";
 import Preis from "./components/Preis";
 import Fenstermasse from "./components/Fenstermasse";
-
+import Variants from "./components/Variants";
+import contentKonfig from "../../content/konfigurator/konfigurator.json";
+import { Button } from "@nextui-org/button";
+import { Accordion, AccordionItem } from "@nextui-org/react";
+import translations from "../../content/translations.json";
+import { Textarea } from "@nextui-org/react";
 export default function Page() {
   const { state, dispatch } = useContext(KonfiguratorContext);
-  const [todoText, setTodoText] = useState("");
-  const [editingIndex, setEditingIndex] = useState(-1);
-  const [editedTodo, setEditedTodo] = useState("");
 
-  const handleAddTodo = () => {
-    if (todoText.trim() !== "") {
-      dispatch({ type: "ADD_TODO", payload: todoText });
-      setTodoText("");
-    }
-  };
-
-  const handleDeleteTodo = (index: any) => {
-    dispatch({ type: "DELETE_TODO", payload: index });
-  };
-
-  const handleEditTodo = (index: any, newTodo: any) => {
-    dispatch({ type: "EDIT_TODO", payload: { index, newTodo } });
-    setEditingIndex(-1);
-    setEditedTodo("");
-  };
   useEffect(() => {});
 
   return (
-    <section className="konfigurator-wrapper p-24">
-      <Hersteller />
-      {state.hersteller !== "" && <Fenster />}
-      <Preis />
-      <Fenstermasse />
-      <div style={{ marginBottom: "4rem", textAlign: "center" }}>
-        <h2>Todos</h2>
-
-        <input
-          type="text"
-          value={todoText}
-          onChange={(e) => setTodoText(e.target.value)}
-          style={{ marginBottom: 16 }}
-          placeholder="Enter a todo"
-        />
-
-        <button onClick={handleAddTodo}>Add Todo</button>
-
-        <ul>
-          {state.todos.map((todo: any, index: any) => (
-            <li key={index}>
-              {index === editingIndex ? (
-                <>
-                  <input
-                    type="text"
-                    value={editedTodo}
-                    onChange={(e) => setEditedTodo(e.target.value)}
-                  />
-
-                  <button
-                    style={{ marginRight: 16 }}
-                    onClick={() => handleEditTodo(index, editedTodo)}
-                  >
-                    Save
-                  </button>
-                </>
-              ) : (
-                <>
-                  {todo}
-                  <button
-                    style={{ marginRight: 16 }}
-                    onClick={() => setEditingIndex(index)}
-                  >
-                    Edit
-                  </button>
-
-                  <button onClick={() => handleDeleteTodo(index)}>
-                    Delete
-                  </button>
-                </>
-              )}
+    <section className="konfigurator-wrapper p-12 rounded-[25px]">
+      <div className=" bg-white  grid grid-cols-[20%_60%_20%] h-[80vh] mt-[100px] items-center justify-items-center">
+        <div className="bg-gray h-full gradient-gray ">
+          <h2>Konfigurator</h2>
+          <Accordion variant="splitted">
+            <AccordionItem
+              key="1"
+              aria-label="Hersteller"
+              title="Hersteller"
+              subtitle={
+                state.hersteller ? (
+                  translations.hersteller[state.hersteller - 1]
+                ) : (
+                  <span> Wähle deinen Fensterhersteller</span>
+                )
+              }
+            ></AccordionItem>
+          </Accordion>
+          <Accordion variant="splitted" disabledKeys={["2"]}>
+            <AccordionItem
+              key="1"
+              aria-label="Fenstermodell"
+              title="Fenstermodell"
+              subtitle={<span>Wähle dein Fenstermodell</span>}
+            >
+              {state.fenstertyp}
+            </AccordionItem>
+          </Accordion>
+          <ul>
+            <li className="grid  grid-cols-2 py-6 border-t-[1px] text-metal border-gray cursor-pointer px-6 hover:bg-white">
+              Hersteller:
+              <span className="rounded-full bg-tahiti p-2 text-white">
+                {state.hersteller}
+              </span>
             </li>
-          ))}
-        </ul>
-        <span className="h2 text-orange">{state.hersteller}</span>
+            <li className="grid  grid-cols-2 py-6 border-t-[1px] text-metal border-gray cursor-pointer px-6 hover:bg-white">
+              Modell:
+              <span className="rounded-full bg-tahiti p-2 text-white">
+                {state.fenstertyp}
+              </span>
+            </li>
+            <li className="grid  grid-cols-2 py-6 border-t-[1px] text-metal border-gray cursor-pointer px-6 hover:bg-white">
+              Fenstertyp:
+              <span className="rounded-full bg-tahiti p-2 text-white">
+                {state.fenstervariant}
+              </span>
+            </li>
+          </ul>
+
+          {state.hersteller !== "" && <Fenster />}
+          <Preis />
+          {state.fenstertyp !== "" && <Variants />}
+          <Fenstermasse />
+        </div>
+        <div>
+          <Hersteller />
+        </div>
+        <div className="border-l-[1px] border-gray h-full  p-12">
+          <h2>Zusammenfassung</h2>
+          <p></p>
+        </div>
       </div>
     </section>
   );

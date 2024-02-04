@@ -2,36 +2,35 @@
 
 import { KonfiguratorContext } from "../../context/konfigurator.context";
 import React, { useContext, useState } from "react";
-import content from "../../../content/konfigurator/variants.json";
+import content from "../../../content/konfigurator/konfigurator.json";
 import { AnyARecord } from "dns";
 
 export default function Fenster() {
   const { state, dispatch } = useContext(KonfiguratorContext);
 
-  const updateFenster = (id: any, price: any) => {
+  const updateFenster = (id: any) => {
+    console.log(id);
     if (state.fenster !== id || state.fenster === "") {
       dispatch({ type: "UPDATE_FENSTER", payload: id });
-      dispatch({ type: "UPDATE_FENSTERPREIS", payload: price });
     } else {
       dispatch({ type: "UPDATE_FENSTER", payload: "" });
-      dispatch({ type: "UPDATE_FENSTERPREIS", payload: "" });
     }
   };
-
+  console.log(content.hersteller);
   const fenster =
-    content.variants.filter(
-      (variant) => variant.id === state.hersteller || []
+    content.hersteller.filter(
+      (hersteller) => hersteller.id === state.hersteller
     ) || [];
 
   return (
     <section>
-      {fenster[0].variants.map((variant: any, index: any) => {
+      {fenster[0].konfiguration.map((fenster: any, index: any) => {
         return (
           <p
-            className={state.fenstertyp === variant.id ? "text-orange" : ""}
-            onClick={() => updateFenster(variant.id, variant.preis)}
+            className={state.hersteller === fenster.id ? "text-orange" : ""}
+            onClick={() => updateFenster(fenster.id)}
           >
-            {variant.name}
+            {fenster.name}
           </p>
         );
       })}

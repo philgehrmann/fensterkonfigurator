@@ -12,6 +12,7 @@ const initialState = {
   todos: [],
   hersteller: "",
   fenstertyp: "",
+  fenstervariant: "",
   fensterpreis: "",
   fensterpreisfull: "",
   minheight: "",
@@ -53,6 +54,17 @@ const reducer = (state: any, action: any) => {
         ...state,
         height: action.payload,
       };
+    case "UPDATE_VARIANT":
+      return {
+        ...state,
+        fenstervariant: action.payload,
+      };
+    case "REMOVE_GLOBALCONFIG":
+      return {
+        ...state,
+        hersteller: action.payload,
+      };
+
     default:
       return state;
   }

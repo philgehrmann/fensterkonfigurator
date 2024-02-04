@@ -50,7 +50,6 @@ h3 {
 }
 @layer components {
   h2 {
-    @apply my-12;
   }
   h3 {
     @apply text-[32px] lg:text-[42px] my-12;
@@ -284,4 +283,12 @@ h3 {
   transform: rotate(180deg);
   background: url("../../public/images/bgimages/WaveReverse.svg");
   background-repeat: no-repeat;
+}
+.gradient-gray {
+  background: rgb(238, 238, 238);
+  background: linear-gradient(
+    0deg,
+    rgba(238, 238, 238, 1) 0%,
+    rgba(245, 245, 245, 0) 100%
+  );
 }
