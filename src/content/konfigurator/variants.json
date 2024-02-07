@@ -1,7 +1,7 @@
 {
   "variants": [
     {
-      "id": 1,
+      "id": "1d",
       "variants": [
         {
           "id": "11",
@@ -15,40 +15,358 @@
         {
           "id": "12",
           "name": "Fester Flügel",
-          "preis": "0.37"
+          "preis": "0.37",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         },
         {
           "id": "13",
           "name": "Dreh Links",
-          "preis": "0.46"
+          "preis": "0.46",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         },
         {
           "id": "14",
           "name": "Dreh Rechts",
-          "preis": "0.46"
+          "preis": "0.46",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         },
         {
           "id": "15",
           "name": "Kipp",
-          "preis": "0.43"
+          "preis": "0.43",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         },
         {
           "id": "16",
           "name": "Dreh-Kipp Links",
-          "preis": "0.51"
+          "preis": "0.51",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         },
         {
           "id": "17",
           "name": "Dreh-Kipp Rechts",
-          "preis": "0.51"
+          "preis": "0.51",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
         }
       ]
     },
     {
-      "id": 2,
+      "id": "2d",
       "variants": [
         {
-          "id": "11",
+          "id": "18",
+          "name": "Fest + Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "19",
+          "name": "Fester Flügel + Fester Flügel",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "20",
+          "name": "Kipp Kipp",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "21",
+          "name": "Dreh-Kipp Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "22",
+          "name": "Fest + Dreh-Kipp",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "23",
+          "name": "Dreh-Kipp + Dreh (Pfosten)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "24",
+          "name": "Dreh + Dreh-Kipp (Pfosten)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "25",
+          "name": "Dreh Kipp + Dreh-Kipp (Pfosten)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "26",
+          "name": "Dreh-Kipp + Dreh (Stulp)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "27",
+          "name": "Dreh + Dreh-Kipp (Stulp)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        }
+      ]
+    },
+    {
+      "id": "3d",
+      "variants": [
+        {
+          "id": "28",
+          "name": "Fest + Fest + Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "29",
+          "name": "Fester Flügel + Fester Flügel + Fester Flügel",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "30",
+          "name": "Kipp + Kipp + Kipp",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "31",
+          "name": "Dreh-Kipp + Fest + Dreh-Kipp",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "32",
+          "name": "Dreh-Kipp + Dreh Links + Dreh-Kipp (Pfosten)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "33",
+          "name": "Dreh-Kipp + Dreh Rechts + Dreh-Kipp (Pfosten)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "34",
+          "name": "Dreh-Kipp + Dreh Links + Dreh-Kipp (Stulp)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "35",
+          "name": "Dreh-Kipp + Dreh Rechts + Dreh-Kipp (Stulp)",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        }
+      ]
+    },
+    {
+      "id": "OL",
+      "variants": [
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        }
+      ]
+    },
+    {
+      "id": "UL",
+      "variants": [
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
+          "name": "Fest",
+          "preis": "0.26325",
+          "minWidth": "350",
+          "maxWidth": "3000",
+          "minHeight": "210",
+          "maxHeight": "3000"
+        },
+        {
+          "id": "18",
           "name": "Fest",
           "preis": "0.26325",
           "minWidth": "350",

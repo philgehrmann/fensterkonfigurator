@@ -4,30 +4,42 @@
       "id": 1,
       "name": "Drutex",
       "image": "/images/logos/logo_drutex.webp",
+      "description": "Drutex ist ein führender Hersteller von Fenstern, Türen und Rollläden mit Sitz in Polen.",
       "konfiguration": [
         {
           "id": 1,
           "name": "Iglo 5",
-          "image": "",
-          "variants": [
-            {
-              "1d": ["11", "12", "13", "14", "15", "16", "17"]
-            },
-            {
-              "2d": ["11", "12", "13", "14", "15", "16", "17"]
-            }
-          ]
+          "image": "/images/fenster/iglo5.jpeg"
         },
         {
           "id": 2,
           "name": "Iglo Energy Classic",
-          "image": "",
+          "image": "/images/fenster/iglo5classic.jpeg",
           "variants": [
             {
-              "1d": ["11", "12", "13", "14", "15", "16", "17"]
+              "id": "1d",
+              "name": "1 Flügel",
+              "variant": ["11", "12", "13", "14", "15", "16", "17"]
             },
             {
-              "2d": ["11", "12", "13", "14", "15", "16", "17"]
+              "id": "2d",
+              "name": "2 Flügel",
+              "variant": ["11", "12", "13", "14", "15", "16", "17"]
+            },
+            {
+              "id": "3d",
+              "name": "3 Flügel",
+              "variant": ["11", "12", "13", "14", "15", "16", "17"]
+            },
+            {
+              "id": "Ob",
+              "name": "Oberlicht",
+              "variant": ["11", "12", "13", "14", "15", "16", "17"]
+            },
+            {
+              "id": "Ul",
+              "name": "Unterlicht",
+              "variant": ["11", "12", "13", "14", "15", "16", "17"]
             }
           ]
         }
@@ -37,6 +49,45 @@
       "id": 2,
       "name": "Veka",
       "image": "/images/logos/logo_veka.webp",
+      "description": "VEKA ist ein renommierter Hersteller von Kunststoffprofilen für Fenster, Türen und Rollläden mit globaler Präsenz.",
+      "konfiguration": [
+        {
+          "1": [
+            {
+              "name": "Iglo 5",
+              "image": "",
+              "variants": [
+                {
+                  "1d": ["11", "12", "13", "14", "15", "16", "17"]
+                },
+                {
+                  "2d": ["11", "12", "13", "14", "15", "16", "17"]
+                }
+              ]
+            }
+          ],
+          "2": [
+            {
+              "name": "Iglo Energy Classic",
+              "image": "",
+              "variants": [
+                {
+                  "1d": ["11", "12", "13", "14", "15", "16", "17"]
+                },
+                {
+                  "2d": ["11", "12", "13", "14", "15", "16", "17"]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Schüco",
+      "image": "/images/logos/logo_sch.webp",
+      "description": "Schüco ist ein weltweit führender Anbieter von hochwertigen Fenster-, Tür- und Fassadensystemen für den Wohn- und Gewerbebau.",
       "konfiguration": [
         {
           "1": [

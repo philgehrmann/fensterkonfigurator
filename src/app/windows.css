@@ -1,0 +1,141 @@
+.fenster-basic {
+  border: 20px solid white;
+  height: 400px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  background: rgb(171, 238, 255);
+  background: linear-gradient(
+    343deg,
+    rgba(171, 238, 255, 0.5) 0%,
+    rgba(245, 245, 245, 0.5) 100%
+  );
+  -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #fff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 2px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #fff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  transform: scale(1);
+}
+.fenster-wrapper {
+  position: relative;
+}
+.fenster-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  opacity: 1;
+  left: 0;
+  right: 0;
+  top: -20px;
+  width: 100%;
+  height: 2px;
+  background: #c9604e;
+}
+.zweier.dreh-rechts::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: url(../../public/images/windowarrows/2darrowleftright.svg);
+  background-size: cover;
+}
+
+.zweier.dreh-links::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: url(../../public/images/windowarrows/2darrowleftright.svg);
+  transform: rotate(180deg);
+  background-size: cover;
+}
+
+.zweier.dreh-top::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: url(../../public/images/windowarrows/2darrowtop.svg);
+  background-size: cover;
+}
+
+.dreh-rechts::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  background: url(../../public/images/windowarrows/1darrow.svg);
+  background-size: cover;
+}
+.frame {
+  transition: 0.6s ease all;
+}
+
+.konfigwrapper {
+  background: url(../../public/images/bgimages/brickwall.webp);
+}
+.windowfloorbg {
+  position: absolute;
+  right: 0;
+  background: #fff;
+  width: 2000px;
+  height: 300px;
+  bottom: -40px;
+  transition: 0.6s ease all;
+  border-top: 50px solid white;
+  background: url(../../public/images/bgimages/floor-wood.jpg);
+  background-repeat: repeat;
+  transform: perspective(300px) rotateY(0deg) scale(1.5) rotateX(60deg);
+}
+
+.fenster-basic-small {
+  border: 10px solid white;
+  height: 100px;
+  width: auto;
+  max-width: 400px;
+  position: relative;
+  background: rgb(171, 238, 255);
+  background: linear-gradient(
+    343deg,
+    rgba(171, 238, 255, 1) 0%,
+    rgba(245, 245, 245, 1) 100%
+  );
+  -webkit-box-shadow: 0px 0px 0px 5px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #fff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 0px 2px #a0a0a0, inset 0px 10px 27px -8px #141414,
+    inset 0px -10px 27px -8px #fff, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  transform: scale(1);
+}
+
+.fenster-basic-small.zweier {
+  border: 5px solid white;
+}
+.fenster-basic-small.dreier {
+  border: 4px solid white;
+}
+
+.small-zweier {
+  width: 105px;
+}
+
+.small-dreier {
+  border: 2px solid white;
+  width: 120px;
+}

@@ -1,0 +1,203 @@
+{
+  "farbe": [
+    {
+      "id": 1,
+      "farbenbasic": [
+        {
+          "name": "weiß",
+          "colorcode": "#FEFCF2",
+          "price": 0,
+          "class": "fwhite"
+        },
+        {
+          "name": "Antrazitgrau",
+          "colorcode": "#282F31",
+          "price": 18.75,
+          "class": "antrazitgrau"
+        },
+        {
+          "name": "Schokobraun",
+          "colorcode": "#342018",
+          "price": 18.75,
+          "class": "schokobraun"
+        },
+        {
+          "name": "Golden Oak Optik",
+          "colorcode": "#835729",
+          "price": 18.75,
+          "class": "goaoptik"
+        },
+        {
+          "name": "Eiche Dunkel Optik",
+          "colorcode": "#392112",
+          "price": 18.75,
+          "class": "eicheoptik"
+        },
+        {
+          "name": "Macore Optik",
+          "colorcode": "#622C1F",
+          "price": 18.75,
+          "class": "macoreoptik"
+        },
+        {
+          "name": "Mahagoni Optik",
+          "colorcode": "#411B10",
+          "price": 18.75,
+          "class": "mahagonioptik"
+        },
+        {
+          "name": "Nussbaum Optik",
+          "colorcode": "#5D3512",
+          "price": 18.75,
+          "class": "nussbaumoptik"
+        },
+        {
+          "name": "Winchester XA Optik",
+          "colorcode": "#9B643E",
+          "price": 18.75,
+          "class": "winchesteroptik"
+        },
+        {
+          "name": "Sheffield Oak Optik",
+          "colorcode": "#BEB4AB",
+          "price": 18.75,
+          "class": "sheffieldoptik"
+        },
+        {
+          "name": "Weiss FX Strukturiert",
+          "colorcode": "#FEFCF2",
+          "price": 18.75,
+          "class": "whitestructure"
+        }
+      ],
+      "farbenpremium": [
+        {
+          "name": "Grau",
+          "colorcode": "#999F9F",
+          "price": 32.15,
+          "class": "premgrau"
+        },
+        {
+          "name": "Bastaltgrau",
+          "colorcode": "#63666D",
+          "price": 32.15,
+          "class": "basalt"
+        },
+        {
+          "name": "Dunkelrot",
+          "colorcode": "#780E12",
+          "price": 32.15,
+          "class": "dunkelrot"
+        },
+        {
+          "name": "Dunkelgrün",
+          "colorcode": "#0A3814",
+          "price": 32.15,
+          "class": "dunkelgrün"
+        },
+        {
+          "name": "Streifen Douglasie Optik",
+          "colorcode": "#934C21",
+          "price": 32.15,
+          "class": "douglasie"
+        },
+        {
+          "name": "Eiche Natur Optik",
+          "colorcode": "#C0A26A",
+          "price": 32.15,
+          "class": "eichenatur"
+        },
+        {
+          "name": "Cremeweiß",
+          "colorcode": "#F6EED2",
+          "price": 32.15,
+          "class": "cremeweiss"
+        },
+        {
+          "name": "Quarzgrau",
+          "colorcode": "#7D7161",
+          "price": 32.15,
+          "class": "quarzgrau"
+        },
+        {
+          "name": "Oregon Optik",
+          "colorcode": "#B2780B",
+          "price": 32.15,
+          "class": "oregon"
+        },
+        {
+          "name": "Schwarzbraun",
+          "colorcode": "#13110A",
+          "price": 32.15,
+          "class": "schwarzbraun"
+        },
+        {
+          "name": "Moosgrün",
+          "colorcode": "#023F28",
+          "price": 32.15,
+          "class": "moosgruen"
+        },
+        {
+          "name": "Anthrazitgrau glatt",
+          "colorcode": "#373C42",
+          "price": 32.15,
+          "class": "antrazitglatt"
+        },
+        {
+          "name": "Basaltgrau glatt",
+          "colorcode": "#63666D",
+          "price": 32.15,
+          "class": "basaltglatt"
+        },
+        {
+          "name": "Quarzgrau glatt",
+          "colorcode": "#7C7061",
+          "price": 42.86,
+          "class": "quarzgrauglatt"
+        },
+        {
+          "name": "Betongrau",
+          "colorcode": "#8A857B",
+          "price": 42.86,
+          "class": "betongrau"
+        },
+        {
+          "name": "Crown Platin",
+          "colorcode": "#312F32",
+          "price": 42.86,
+          "class": "crownplatin"
+        },
+        {
+          "name": "Lichtgrau",
+          "colorcode": "#C6C9C8",
+          "price": 42.86,
+          "class": "lichtgrau"
+        },
+        {
+          "name": "Eisenglimmer Schiefer",
+          "colorcode": "#404647",
+          "price": 42.86,
+          "class": "eisenglimmer"
+        },
+        {
+          "name": "Schiefergrau glatt",
+          "colorcode": "#414747",
+          "price": 42.86,
+          "class": "schiefergrau"
+        },
+        {
+          "name": "Anthrazit Ultimatt",
+          "colorcode": "#383939",
+          "price": 42.86,
+          "class": "antrazitulti"
+        },
+        {
+          "name": "Schwarz Ultimatt",
+          "colorcode": "#040404",
+          "price": 42.86,
+          "class": "schwarzulti"
+        }
+      ]
+    }
+  ]
+}

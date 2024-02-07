@@ -24,7 +24,9 @@ const config: Config = {
       'gray': '#e8e8e8',
       'orange': '#c9604e',
       'orangelight': '#c9604e',
-      'lightgray': '#f7f7f7'
+      'lightgray': '#f7f7f7',
+      'fwhite': 'red',
+      'Antrazitgrau': "#282F31"
     },
     extend: {
       backgroundImage: {
@@ -34,6 +36,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [nextui()],
+  plugins: [nextui()]
 }
 export default config

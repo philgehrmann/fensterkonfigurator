@@ -4,6 +4,7 @@ import { Suspense } from "react";
 import { Providers } from "./providers";
 
 import "./globals.css";
+import "./windows.css";
 import Header from "../components/Header";
 import Footer from "@/components/Footer";
 import { storyblokInit, apiPlugin } from "@storyblok/react";

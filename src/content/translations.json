@@ -1,3 +1,13 @@
 {
-  "hersteller": ["Drutex", "Veka", "Schüco"]
+  "hersteller": ["Drutex", "Veka", "Schüco"],
+  "fenstermodelle": [
+    {
+      "id": 1,
+      "name": "Iglo 5"
+    },
+    {
+      "id": 2,
+      "name": "Iglo 5 Classic"
+    }
+  ]
 }

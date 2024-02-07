@@ -18,29 +18,34 @@ export default function Hersteller() {
   };
 
   return (
-    <section>
-      <h2> Wähle einen Hersteller</h2>
-      <div className="grid grid-cols-3 gap-6 items-center justify-items-center">
+    <div className="self-center">
+      <h3 className="m-0">Hersteller</h3>
+      <p className="text-[12px]"> Wählen Sie einen Fensterhersteller</p>
+      <div className="grid grid-cols-1 gap-6 items-center justify-items-center mt-6">
         {content.hersteller.map((marke, index) => {
           return (
-            <div className="rounded-xl p-6 bg-white drop-shadow-lg cursor-pointer">
-              <p
-                className={state.hersteller === marke.id ? "text-orange" : ""}
-                onClick={() => updateHersteller(marke.id)}
-              >
-                <Image
-                  src={marke.image}
-                  alt={marke.name}
-                  width={200}
-                  height={200}
-                  className="w-[80%] lg:w-[80%] h-auto mx-auto"
-                />
-                {marke.name}
-              </p>
+            <div
+              key={index}
+              className=" cursor-pointer grid grid-cols-2 items-center"
+              onClick={() => updateHersteller(marke.id)}
+            >
+              <Image
+                src={marke.image}
+                alt={marke.name}
+                width={200}
+                height={200}
+                className={
+                  "w-[100%] lg:w-[100%] h-auto mx-auto border-[3px] border-transparent rounded-xl p-6 bg-white drop-shadow-lg" +
+                  (marke.id === state.hersteller
+                    ? " border-[3px] border-orange"
+                    : "")
+                }
+              />
+              <p className="text-[12px] px-4">{marke.description}</p>
             </div>
           );
         })}
       </div>
-    </section>
+    </div>
   );
 }

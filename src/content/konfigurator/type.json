@@ -1,0 +1,39 @@
+{
+  "types": [
+    {
+      "windowid": 1,
+      "variants": [
+        {
+          "id": "1d",
+          "name": "1 Flügel",
+          "className": "1fl",
+          "variant": ["11", "12", "13", "14", "15", "16", "17"]
+        },
+        {
+          "id": "2d",
+          "name": "2 Flügel",
+          "className": "2fl",
+          "variant": ["11", "12", "13", "14", "15", "16", "17"]
+        },
+        {
+          "id": "3d",
+          "name": "3 Flügel",
+          "className": "3fl",
+          "variant": ["11", "12", "13", "14", "15", "16", "17"]
+        },
+        {
+          "id": "Ol",
+          "name": "Oberlicht",
+          "className": "ol",
+          "variant": ["11", "12", "13", "14", "15", "16", "17"]
+        },
+        {
+          "id": "Ul",
+          "name": "Unterlicht",
+          "className": "ul",
+          "variant": ["11", "12", "13", "14", "15", "16", "17"]
+        }
+      ]
+    }
+  ]
+}

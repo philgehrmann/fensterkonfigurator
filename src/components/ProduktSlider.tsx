@@ -43,7 +43,7 @@ export default function Produktslider() {
               <div className=" bg-white rounded-lg drop-shadow-md group-hover:drop-shadow-lg">
                 <Link href={"fensterdetail/" + item.link}>
                   <div className="w-[55px] absolute top-[10px] left-[10px]">
-                    <img
+                    <Image
                       src={"/images/logos/logo_" + item.logo + ".webp"}
                       alt={item.alt}
                     />

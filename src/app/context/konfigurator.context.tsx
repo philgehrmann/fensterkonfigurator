@@ -11,15 +11,21 @@ import React, {
 const initialState = {
   todos: [],
   hersteller: "",
+  fenstermodell: "",
   fenstertyp: "",
   fenstervariant: "",
   fensterpreis: "",
-  fensterpreisfull: "",
+  fensterpreisfull: 0,
   minheight: "",
   maxheight: "",
-  height: "1000",
-  width: "1000",
+  height: "",
+  width: "",
   color: "",
+  colorPreis: "",
+  translationHersteller: "",
+  translationTyp: "",
+  translationModell: "",
+  translationVariant: "",
 };
 
 const reducer = (state: any, action: any) => {
@@ -32,7 +38,7 @@ const reducer = (state: any, action: any) => {
     case "UPDATE_FENSTER":
       return {
         ...state,
-        fenstertyp: action.payload,
+        fenstermodell: action.payload,
       };
     case "UPDATE_FENSTERPREIS":
       return {
@@ -59,10 +65,50 @@ const reducer = (state: any, action: any) => {
         ...state,
         fenstervariant: action.payload,
       };
+    case "UPDATE_FENSTERTYP":
+      return {
+        ...state,
+        fenstertyp: action.payload,
+      };
     case "REMOVE_GLOBALCONFIG":
       return {
         ...state,
         hersteller: action.payload,
+      };
+    case "UPDATE_TRANSLATION":
+      return {
+        ...state,
+        [action.key]: action.payload,
+      };
+    case "UPDATE_MINHEIGHT":
+      return {
+        ...state,
+        minheight: action.payload,
+      };
+    case "UPDATE_MAXHEIGHT":
+      return {
+        ...state,
+        maxheight: action.payload,
+      };
+    case "UPDATE_MINWIDTH":
+      return {
+        ...state,
+        minwidth: action.payload,
+      };
+    case "UPDATE_MAXWIDTH":
+      return {
+        ...state,
+        maxwidth: action.payload,
+      };
+    case "UPDATE_COLOR":
+      return {
+        ...state,
+        color: action.payload,
+      };
+    case "UPDATE_COLORPREIS":
+      return {
+        ...state,
+        colorPreis: action.payload,
       };
 
     default:
