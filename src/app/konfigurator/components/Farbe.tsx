@@ -9,13 +9,15 @@ import "../../colors.css";
 export default function Farbe() {
   const { state, dispatch } = useContext(KonfiguratorContext);
 
-  const updateColor = (name: any, preis: any) => {
+  const updateColor = (name: any, preis: any, classname: any) => {
     if (state.color !== name || state.color === "") {
       dispatch({ type: "UPDATE_COLOR", payload: name });
       dispatch({ type: "UPDATE_COLORPREIS", payload: preis });
+      dispatch({ type: "UPDATE_COLORCLASS", payload: classname });
     } else {
       dispatch({ type: "UPDATE_COLOR", payload: "" });
       dispatch({ type: "UPDATE_COLORPREIS", payload: "" });
+      dispatch({ type: "UPDATE_COLORCLASS", payload: "" });
     }
   };
 
@@ -36,7 +38,7 @@ export default function Farbe() {
                 "grid grid-cols-1 cursor-pointer items-center justify-items-center min-h-[120px] p-4 w-full  " +
                 (color.name === state.color ? " bg-white drop-shadow-lg" : "")
               }
-              onClick={() => updateColor(color.name, color.price)}
+              onClick={() => updateColor(color.name, color.price, color.class)}
             >
               <div
                 className={
@@ -62,7 +64,7 @@ export default function Farbe() {
                 "grid grid-cols-1 cursor-pointer items-center justify-items-center min-h-[120px] p-4 w-full  " +
                 (color.name === state.color ? " bg-white drop-shadow-lg" : "")
               }
-              onClick={() => updateColor(color.name, color.price)}
+              onClick={() => updateColor(color.name, color.price, color.class)}
             >
               <div
                 key={index}

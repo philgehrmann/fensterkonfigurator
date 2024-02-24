@@ -13,7 +13,6 @@ export default function Page() {
     <>
       <MainSlider page="fenster" />
       <div className=" lg:max-w-[75%] mx-auto">
-        <h2 className="h2 text-center">Fenster</h2>
         {content.fenster.map((item, index) => {
           return (
             <section

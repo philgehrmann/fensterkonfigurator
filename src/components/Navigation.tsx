@@ -14,7 +14,7 @@ export default function Navigation({
     <>
       <ul className="grid grid-flow-col justify-self-center" key="navigation">
         {content.navigation.map((item, index) => {
-          return !item.subnav ? (
+          return (
             <Link href={item.path} key={index}>
               <li
                 className={
@@ -26,19 +26,6 @@ export default function Navigation({
                 {item.name}
               </li>
             </Link>
-          ) : (
-            <div key={index}>
-              <li
-                className={
-                  scrolltopdata
-                    ? "navitem grid content-center text-black uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
-                    : "navitem-black grid content-center text-black uppercase grid-flow-col mx-2 px-4 py-2 text-[16px] font-[600] cursor-pointer"
-                }
-                key={index}
-              >
-                {item.name}
-              </li>
-            </div>
           );
         })}
       </ul>

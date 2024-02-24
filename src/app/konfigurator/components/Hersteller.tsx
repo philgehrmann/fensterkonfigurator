@@ -35,7 +35,7 @@ export default function Hersteller() {
                 width={200}
                 height={200}
                 className={
-                  "w-[100%] lg:w-[100%] h-auto mx-auto border-[3px] border-transparent rounded-xl p-6 bg-white drop-shadow-lg" +
+                  "w-[100%] lg:w-[100%] h-auto mx-auto border-[3px] rounded-xl p-6 bg-white drop-shadow-lg" +
                   (marke.id === state.hersteller
                     ? " border-[3px] border-orange"
                     : "")

@@ -8,6 +8,8 @@ export default function Fenstertype() {
   const { state, dispatch } = useContext(KonfiguratorContext);
 
   const updateFensterType = (id: any, name: any) => {
+    console.log(id);
+    console.log(id);
     if (state.fenstertyp !== id || state.fenstertyp === "") {
       dispatch({ type: "UPDATE_FENSTERTYP", payload: id });
       dispatch({
@@ -50,10 +52,10 @@ export default function Fenstertype() {
             <div
               key={index}
               className={
-                "cursor-pointer grid grid-cols-1 border-[2px] border-transparent min-w-[150px] px-4 py-2 items-center text-center bg-white rounded-xl drop-shadow-lg " +
+                "cursor-pointer grid grid-cols-1 border-[2px]  min-w-[150px] px-4 py-2 items-center text-center bg-white rounded-xl drop-shadow-lg " +
                 (state.fenstertyp === variant.id
                   ? "border-[3px] border-orange"
-                  : "")
+                  : " border-white")
               }
               onClick={() => updateFensterType(variant.id, variant.name)}
             >

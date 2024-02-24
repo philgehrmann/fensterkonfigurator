@@ -1,79 +1,31 @@
 {
   "navigation": [
     {
-      "name": "Fenster",
+      "name": "Home",
       "path": "/",
-      "subnavIdent": "nav_fenster",
-      "subnav": [
-        {
-          "type": "Aluminium",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "fenster",
-          "altTag": "Polnische Fenster - Guenstig kaufen",
-          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
-        },
-        {
-          "type": "Kunststoff",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "rahmen",
-          "altTag": "Polnische Fenster - Guenstig kaufen",
-          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
-        },
-        {
-          "type": "Holz",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "montage",
-          "altTag": "Die perfekte Montage der Profis",
-          "text": "Einfache, schnelle und kostengünstige Montage"
-        },
-        {
-          "type": "Holz-Aluminium",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "montage",
-          "altTag": "Die perfekte Montage der Profis",
-          "text": "Einfache, schnelle und kostengünstige Montage"
-        }
-      ]
+      "subnavIdent": "nav_fenster"
+    },
+    {
+      "name": "Fenster",
+      "path": "/fenster",
+      "subnavIdent": "nav_fenster"
     },
     {
       "name": "So einfach geht's",
-      "path": "produkte",
-      "subnavIdent": "nav_produkte",
-      "subnav": [
-        {
-          "type": "Außentüren",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "fenster",
-          "altTag": "Polnische Fenster - Guenstig kaufen",
-          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
-        },
-        {
-          "type": "Innentüren",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "rahmen",
-          "altTag": "Polnische Fenster - Guenstig kaufen",
-          "text": "Moderne Fenster zu günstigen Preisen und Top Qualität"
-        },
-        {
-          "type": "Haustüren",
-          "image": "https://picsum.photos/seed/picsum/420/300",
-          "path": "montage",
-          "altTag": "Die perfekte Montage der Profis",
-          "text": "Einfache, schnelle und kostengünstige Montage"
-        }
-      ]
+      "path": "/so-einfach",
+      "subnavIdent": "nav_produkte"
     },
     {
       "name": "Konfigurator",
-      "path": "konfigurator"
+      "path": "/konfigurator"
     },
     {
-      "name": "Montage",
-      "path": "konfigurator"
+      "name": "Montageservice",
+      "path": "/montageservice"
     },
     {
       "name": "Kontakt",
-      "path": "kontakt"
+      "path": "/kontakt"
     }
   ]
 }

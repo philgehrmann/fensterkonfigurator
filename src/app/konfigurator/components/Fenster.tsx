@@ -36,12 +36,12 @@ export default function Fenster() {
     <div className="self-center">
       <h3 className="m-0">Fenstermodell</h3>
       <p className="text-[12px]"> Wählen Sie ein Fenstermodell</p>
-      <div className="grid grid-cols-1 gap-6 items-center justify-items-center mt-6">
+      <div className="grid grid-cols-2 gap-6 items-center justify-items-center mt-6">
         {fenster[0].konfiguration.map((fenster: any, index: any) => {
           return (
             <div
               key={index}
-              className={" cursor-pointer grid grid-cols-2 "}
+              className={" cursor-pointer grid grid-cols-1 "}
               onClick={() => updateFenster(fenster.id, fenster.name)}
             >
               <Image
@@ -50,13 +50,13 @@ export default function Fenster() {
                 width={200}
                 height={200}
                 className={
-                  "w-[100%] lg:w-[100%] h-auto mx-auto rounded-xl p-6 bg-white drop-shadow-lg  border-[3px] border-transparent items-center" +
+                  "w-[100%] lg:w-[100%] max-h-[175px] h-auto mx-auto rounded-xl p-6 bg-white drop-shadow-lg  border-[3px]  items-center" +
                   (fenster.id === state.fenstermodell
                     ? " border-[3px] border-orange"
-                    : "")
+                    : " border-white")
                 }
               />
-              <p className="text-[14px] px-4">
+              <p className="text-[14px] px-4 text-center pt-6">
                 <span className="font-bold">{fenster.name}</span>
                 <ScrollShadow
                   hideScrollBar

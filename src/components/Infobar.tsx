@@ -92,14 +92,21 @@ export default function Infobar() {
             <div>
               <div className=" grid-flow-col hidden lg:grid justify-items-end">
                 <div className="cursor-pointer">
-                  <FontAwesomeIcon
-                    className="inline-block pr-1 self-center text-[22px] text-white"
-                    icon={faFacebookSquare}
-                  />{" "}
-                  <FontAwesomeIcon
-                    className="inline-block pr-1 self-center text-[22px] text-white"
-                    icon={faInstagramSquare}
-                  />{" "}
+                  <a href="https://www.facebook.com/profile.php?id=100085685977494&viewas=100000686899395">
+                    <FontAwesomeIcon
+                      className="inline-block pr-1 self-center text-[22px] text-white"
+                      icon={faFacebookSquare}
+                    />{" "}
+                  </a>
+                  <a
+                    href="https://www.instagram.com/sg_bau_gmbh?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                    target="_blank"
+                  >
+                    <FontAwesomeIcon
+                      className="inline-block pr-1 self-center text-[22px] text-white"
+                      icon={faInstagramSquare}
+                    />{" "}
+                  </a>
                 </div>
               </div>
             </div>

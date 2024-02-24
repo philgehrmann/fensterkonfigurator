@@ -45,6 +45,9 @@ export default function Produktslider() {
                   <div className="w-[55px] absolute top-[10px] left-[10px]">
                     <Image
                       src={"/images/logos/logo_" + item.logo + ".webp"}
+                      width={100}
+                      loading="lazy"
+                      height={80}
                       alt={item.alt}
                     />
                   </div>

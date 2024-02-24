@@ -10,7 +10,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "fest"
         },
         {
           "id": "12",
@@ -19,7 +20,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "festerfluegel"
         },
         {
           "id": "13",
@@ -28,7 +30,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "drehlinks"
         },
         {
           "id": "14",
@@ -37,7 +40,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "drehrechts"
         },
         {
           "id": "15",
@@ -46,7 +50,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "kipp"
         },
         {
           "id": "16",
@@ -55,7 +60,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "drehkipplinks"
         },
         {
           "id": "17",
@@ -64,7 +70,8 @@
           "minWidth": "350",
           "maxWidth": "3000",
           "minHeight": "210",
-          "maxHeight": "3000"
+          "maxHeight": "3000",
+          "className": "drehkipprechts"
         }
       ]
     },

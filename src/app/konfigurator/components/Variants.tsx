@@ -42,7 +42,7 @@ export default function Variants() {
 
   const variants =
     content.variants.filter((variant) => variant.id === state.fenstertyp) || [];
-
+  cons;
   return (
     <div className="self-center">
       <h3 className="m-0">Öffnungsrichtung</h3>
@@ -50,26 +50,41 @@ export default function Variants() {
         {" "}
         Wählen Sie Ihre gewünschte Öffnungsrichtung
       </p>
-      <div className="grid grid-cols-1 gap-6 items-center justify-items-center mt-6">
+      <div className="grid grid-cols-2 gap-6 items-center justify-items-center mt-6">
         {variants[0].variants.map((variant: any, index: any) => {
           return (
-            <p
-              key={index}
-              className={state.fenster === variant.id ? "text-orange" : ""}
-              onClick={() =>
-                updateVariants(
-                  variant.id,
-                  variant.preis,
-                  variant.name,
-                  variant.minHeight,
-                  variant.maxHeight,
-                  variant.minWidth,
-                  variant.maxWidth
-                )
+            <div
+              className={
+                "w-full cursor-pointer grid grid-cols-1 border-[2px] px-2 py-2 items-center text-center bg-white rounded-xl drop-shadow-lg " +
+                (state.fenstervariant === variant.id
+                  ? "border-[3px] border-orange"
+                  : " border-white")
               }
             >
-              {variant.name}
-            </p>
+              <div
+                className={
+                  "fenster-basic-small mb-2 preview mx-auto w-full preview " +
+                  variant.className
+                }
+              ></div>
+              <p
+                key={index}
+                className="text-[12px]"
+                onClick={() =>
+                  updateVariants(
+                    variant.id,
+                    variant.preis,
+                    variant.name,
+                    variant.minHeight,
+                    variant.maxHeight,
+                    variant.minWidth,
+                    variant.maxWidth
+                  )
+                }
+              >
+                {variant.name}
+              </p>
+            </div>
           );
         })}
       </div>

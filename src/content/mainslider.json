@@ -4,9 +4,13 @@
       "page": "home",
       "slides": [
         {
+          "headline1": "Jetzt deine",
+          "headline2": "Traumfenster",
+          "headline3": "erstellen",
           "name": "Qualitätsfenster aus Polen",
           "image": "/images/fenster/fenster-slider-5.webp",
-          "headline": "Qualitätsfenster aus Polen"
+          "headline": "Qualitätsfenster aus Polen",
+          "description": "Erstellen Sie unkompliziert ihre Wunschfenster und lassen Sie sich ein einfaches unverbindliches Angebot erstellen"
         }
       ]
     },
@@ -14,16 +18,15 @@
       "page": "fenster",
       "slides": [
         {
+          "headline1": "Unsere",
+          "headline2": "Fenster",
+          "headline3": "entdecken",
           "name": "Fenster1",
           "headline": "",
           "description": "",
           "buttonPath": "",
           "buttonName": "",
-          "image": "https://picsum.photos/id/16/2000/600?random=3"
-        },
-        {
-          "name": "Fenster1",
-          "image": "https://picsum.photos/seed/picsum/2000/600?random=2"
+          "image": "/images/fenster/fenster-slider-4.jpg"
         }
       ]
     },

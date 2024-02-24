@@ -292,3 +292,30 @@ h3 {
     rgba(245, 245, 245, 0) 100%
   );
 }
+.mask1 {
+  background: url("../../public/images/bgimages/window5.jpg") no-repeat;
+  background-size: cover;
+  mask-image: url("../../public/images/blob1.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+}
+
+.mask2 {
+  background: url("../../public/images/bgimages/window5.jpg") no-repeat;
+  background-size: cover;
+  mask-image: url("../../public/images/blob2.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 600px;
+  height: 600px;
+}
+@media only screen and (max-width: 1024px) {
+  .mask1,
+  .mask2 {
+    width: 300px;
+    height: 300px;
+    display: none;
+  }
+}

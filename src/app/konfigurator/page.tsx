@@ -66,12 +66,12 @@ export default function Page() {
   useEffect(() => {}, [currStep]);
 
   return (
-    <div className="konfigurator-wrapper overflow-x-hidden rounded-[25px] relative h-[100vh]">
+    <div className="konfigurator-wrapper overflow-x-hidden  relative h-[100vh]">
       <div className=" bg-white grid grid-cols-1 xl:grid-cols-[10%_40%_50%] xl:mt-[115px] ">
         <div className="hidden xl:block"></div>
         <div className="h-[80%] drop-shadow-lg rounded-b-xl bg-white relative z-[100]">
-          <div className="grid grid-cols-[35%_65%] h-[80%] bg-lightgray items-center">
-            <div className="  bg-lightgray h-[600px] grid items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] h-[80%] bg-lightgray items-center">
+            <div className="  bg-lightgray lg:h-[600px] grid items-center">
               <div className="konfigNav">
                 <ul>
                   <li
@@ -262,7 +262,7 @@ export default function Page() {
                 {state.fenstervariant !== "" && <Farbe />}
               </div>
             </div>
-            <div className="bg-white p-6 col-span-2 overflow-y-scroll border-t-[2px] border-gray z-[150]">
+            <div className="bg-white p-6 col-span-2 overflow-y-scroll border-t-[2px] border-gray z-[150] rounded-b-lg">
               <div className="grid grid-cols-[60%_40%] items-center">
                 <div>
                   <Button
@@ -282,17 +282,17 @@ export default function Page() {
                   </Button>
                 </div>
                 <div className="justify-self-end text-right">
-                  <p className="text-[14px]">unverbindlicher Preis</p>
-                  <p className="font-bold text-[32px] ">
+                  <p className="text-[12px]">unverbindliche Preisempfehlung</p>
+                  <p className="font-bold text-[42px] ">
                     <Preis />
                   </p>
                 </div>
-                <p className="text-[11px] col-span-2 ">
+                <p className="text-[11px] col-span-2 hidden">
                   *Bitte beachten Sie, dass es sich beim angezeigten Preis um
                   eine Konfigurationsvariante handelt. Bei individuellen
                   Wünschen, kann der Preis variieren.
                 </p>
-                <p className="text-[11px] col-span-2">
+                <p className="text-[11px] col-span-2 hidden">
                   *Der angzeigte Preis beinhaltet lediglich den Fensterpreis,
                   nicht jedoch die Montage und Lieferung.
                 </p>
@@ -300,10 +300,10 @@ export default function Page() {
             </div>
           </div>
         </div>
-        <div className="konfigwrapper p-24 pr-12 bg-black absolute right-0 left-0 top-0 grid lg:grid-cols-1 xl:grid-cols-[60%_40%] h-[100vh]">
+        <div className="konfigwrapper pl-[12%] lg:p-24 pr-[16%] bg-black relative lg:absolute right-0 left-0 top-0 grid lg:grid-cols-1 xl:grid-cols-[60%_40%] lg:h-[100vh]">
           <div className="xl:block"></div>
           <div>
-            <div className="windowfloorbg absolute"></div>
+            <div className="windowfloorbg lg:absolute"></div>
             <div className="max-w-[500px] mt-36">
               <WindowFrame frame={state.fenstertyp ? state.fenstertyp : "1d"} />
             </div>

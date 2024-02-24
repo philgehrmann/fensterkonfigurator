@@ -1,3 +1,11 @@
+:root {
+  --background-gradient: linear-gradient(
+    343deg,
+    rgba(171, 238, 255, 0.5) 0%,
+    rgba(245, 245, 245, 0.5) 100%
+  );
+}
+
 .fwhite {
   background: #fefcf2;
 }
@@ -98,4 +106,145 @@
 }
 .schwarzulti {
   background: #040404;
+}
+
+:root {
+  --background-gradient: linear-gradient(
+    343deg,
+    rgba(171, 238, 255, 0.5) 0%,
+    rgba(245, 245, 245, 0.5) 100%
+  );
+}
+.fenster-basic.fwhite {
+  background: var(--background-gradient);
+  border-color: #fefcf2;
+}
+.fenster-basic.antrazitgrau {
+  background: var(--background-gradient);
+  border-color: #282f31;
+}
+.fenster-basic.schokobraun {
+  background: var(--background-gradient);
+  border-color: #342018;
+}
+.fenster-basic.goaoptik {
+  background: var(--background-gradient);
+  border-color: #835729;
+}
+.fenster-basic.eicheoptik {
+  background: var(--background-gradient);
+  border-color: #392112;
+}
+.fenster-basic.macoreoptik {
+  background: var(--background-gradient);
+  border-color: #622c1f;
+}
+.fenster-basic.mahagonioptik {
+  background: var(--background-gradient);
+  border-color: #411b10;
+}
+.fenster-basic.nussbaumoptik {
+  background: var(--background-gradient);
+  border-color: #5d3512;
+}
+.fenster-basic.winchesteroptik {
+  background: var(--background-gradient);
+  border-color: #9b643e;
+}
+.fenster-basic.sheffieldoptik {
+  background: var(--background-gradient);
+  border-color: #beb4ab;
+}
+.fenster-basic.whitestructure {
+  background: var(--background-gradient);
+  border-color: #fefcf2;
+}
+.fenster-basic.premgrau {
+  background: var(--background-gradient);
+  border-color: #fefcf2;
+}
+.fenster-basic.basalt {
+  background: var(--background-gradient);
+  border-color: #63666d;
+}
+.fenster-basic.dunkelrot {
+  background: var(--background-gradient);
+  border-color: #780e12;
+}
+.fenster-basic.dunkelgrün {
+  background: var(--background-gradient);
+  border-color: #0a3814;
+}
+.fenster-basic.douglasie {
+  background: var(--background-gradient);
+  border-color: #934c21;
+}
+.fenster-basic.eichenatur {
+  background: var(--background-gradient);
+  border-color: #c0a26a;
+}
+.fenster-basic.cremeweiss {
+  background: var(--background-gradient);
+  border-color: #f6eed2;
+}
+.fenster-basic.quarzgrau {
+  background: var(--background-gradient);
+  border-color: #7d7161;
+}
+.fenster-basic.oregon {
+  background: var(--background-gradient);
+  border-color: #b2780b;
+}
+.fenster-basic.schwarzbraun {
+  background: var(--background-gradient);
+  border-color: #13110a;
+}
+.fenster-basic.moosgruen {
+  background: var(--background-gradient);
+  border-color: #023f28;
+}
+
+.fenster-basic.antrazitglatt {
+  background: var(--background-gradient);
+  border-color: #373c42;
+}
+
+.fenster-basic.basaltglatt {
+  background: var(--background-gradient);
+  border-color: #63666d;
+}
+.fenster-basic.quarzgrauglatt {
+  background: var(--background-gradient);
+  border-color: #7c7061;
+}
+
+.fenster-basic.betongrau {
+  background: var(--background-gradient);
+  border-color: #8a857b;
+}
+.fenster-basic.crownplatin {
+  background: var(--background-gradient);
+  border-color: #312f32;
+}
+
+.fenster-basic.lichtgrau {
+  background: var(--background-gradient);
+  border-color: #c6c9c8;
+}
+
+.fenster-basic.eisenglimmer {
+  background: var(--background-gradient);
+  border-color: #404647;
+}
+.fenster-basic.schiefergrau {
+  background: var(--background-gradient);
+  border-color: #414747;
+}
+.fenster-basic.antrazitulti {
+  background: var(--background-gradient);
+  border-color: #383939;
+}
+.fenster-basic.schwarzulti {
+  background: var(--background-gradient);
+  border-color: #040404;
 }

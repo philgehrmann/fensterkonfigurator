@@ -59,7 +59,7 @@ export default function Header() {
             <div className="xl:hidden justify-self-end">asd</div>
             <div className="self-center hidden xl:block justify-self-end border-l-[1px] border-gray pl-4">
               <Link
-                href="/"
+                href="/konfigurator"
                 className={
                   scrolltopdata
                     ? "cursor-pointer  w-auto border-[1px] border-lightgray bg-orange btn inline-block"
@@ -76,8 +76,8 @@ export default function Header() {
                 />
                 {scrolltopdata && "Fenster konfigurieren"}
               </Link>
-              <Link
-                href="/"
+              <a
+                href="tel:+4917670503030"
                 className={
                   scrolltopdata
                     ? " cursor-pointer  border-[1px] border-lightgray bg-orange btn inline-block"
@@ -93,7 +93,7 @@ export default function Header() {
                   icon={faPhone}
                 />
                 {scrolltopdata && "Jetzt Termin vereinbaren"}
-              </Link>
+              </a>
             </div>
           </div>
         </div>

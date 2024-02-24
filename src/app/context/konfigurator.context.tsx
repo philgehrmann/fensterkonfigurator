@@ -22,6 +22,7 @@ const initialState = {
   width: "",
   color: "",
   colorPreis: "",
+  colorClass: "",
   translationHersteller: "",
   translationTyp: "",
   translationModell: "",
@@ -109,6 +110,11 @@ const reducer = (state: any, action: any) => {
       return {
         ...state,
         colorPreis: action.payload,
+      };
+    case "UPDATE_COLORCLASS":
+      return {
+        ...state,
+        colorClass: action.payload,
       };
 
     default:

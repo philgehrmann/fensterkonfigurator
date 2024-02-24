@@ -20,7 +20,7 @@ const cabin = Cabin({
 
 export default function MainSlider({ page }: { page: any }) {
   return (
-    <div className="w-full mx-auto  text-center pb-24 mb-12 mainslider relative top-[0px] xl:top-[133px]  border-black">
+    <div className="w-full mx-auto  text-center lg:pb-24 lg:mb-4 mainslider relative top-[0px] xl:top-[119px]  border-black">
       <Swiper
         pagination={true}
         modules={[Pagination, Virtual, Autoplay]}
@@ -30,7 +30,7 @@ export default function MainSlider({ page }: { page: any }) {
           disableOnInteraction: false,
         }}
         slidesPerView={1}
-        className="mx-auto fenster-slider relative mb-24 lg:h-[100vh]"
+        className="mx-auto fenster-slider relative lg:mb-24 lg:h-[100vh]"
         breakpoints={{
           768: {
             slidesPerView: 1,
@@ -54,7 +54,7 @@ export default function MainSlider({ page }: { page: any }) {
                     <SwiperSlide key={index} className="relative lg:h-[100vh]">
                       <div className="grid lg:grid-cols-2 w-full">
                         <div className="text-white z-[800] mx-auto w-[100%] h-[full] ">
-                          <div className="h-full pt-80 lg:pt-64 ml-6 lg:ml-12">
+                          <div className="lg:h-full pt-80 lg:pt-64 ml-6 lg:ml-12">
                             <p className="uppercase text-[16px]  lg:ml-[25%] text-left lg:text-[24px] mb-4 text-black">
                               <TypeAnimation
                                 sequence={[
@@ -74,20 +74,18 @@ export default function MainSlider({ page }: { page: any }) {
                               />
                             </p>
                             <h2 className=" lg:ml-[25%] uppercase text-[42px] text-left leading-[42px] lg:text-[72px] text-black font-bold mt-0 mb-0 lg:leading-[72px] w-full lg:w-[90%]">
-                              Jetzt Ihre
+                              {slide.headline1}
                               <br />
                               <span className="text-[42px] leading-[42px] lg:leading-[72px] lg:text-[72px] text-orange">
-                                Traumfenster
+                                {slide.headline2}
                               </span>{" "}
                               <br />
                               <span className="text-[42px] leading-[42px] lg:leading-[72px] lg:text-[72px]">
-                                konfigurieren
+                                {slide.headline3}
                               </span>
                             </h2>
                             <p className=" text-[14px] lg:ml-[25%] text-left lg:text-[20px] mt-4 mb-12 text-black">
-                              Erstellen Sie Ihre persönlichen Wunschfenster für
-                              Ihre Immobilie und lassen Sie sich ein
-                              unverbindliches Angebot erstellen.
+                              {slide.description}
                             </p>
                             <section className="text-left lg:ml-[25%] pb-[50px] lg:pb-0">
                               <Link
