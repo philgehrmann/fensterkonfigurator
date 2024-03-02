@@ -54,74 +54,81 @@ export default function Howto() {
         </div>
         <div className="mb-12 mt-12">
           <div>
-            <h3 className="mb-6 lg:mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[62px]">
+            <h3 className="mb-6 lg:mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[42px]">
               So einfach geht's
             </h3>
-            <div className="grid grid-cols-1 lg:grid-cols-2 items-center mb-6">
-              <div className="text-left">
-                <p className="font-bold">Schritt 1 </p>
-                <h3 className="mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[62px] text-orange">
-                  Konfigurieren
-                </h3>
-                <p className="lg:ml-12">
-                  Beginnen Sie den Prozess, indem Sie Ihre Fenster nach Ihren
-                  individuellen Anforderungen konfigurieren. Wählen Sie aus
-                  einer Vielzahl von Optionen, darunter Fenstertyp, Material,
-                  Farbe, Größe und Verglasung. Nutzen Sie unser
-                  benutzerfreundliches Konfigurationstool, um Ihre Auswahl zu
-                  treffen und sicherzustellen, dass Ihre Fenster perfekt zu
-                  Ihrem Zuhause passen.
-                </p>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              <div className="grid grid-cols-1 lg:grid-cols-1  mb-6">
+                <div className="text-left">
+                  <div className="mask1">asd</div>
+                  <p className="font-bold">Schritt 1 </p>
+                  <h3 className="mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[24px] text-orange">
+                    Konfigurieren
+                  </h3>
+                  <p className="">
+                    Beginnen Sie den Prozess, indem Sie Ihre Fenster nach Ihren
+                    individuellen Anforderungen konfigurieren. Wählen Sie aus
+                    einer Vielzahl von Optionen, darunter Fenstertyp, Material,
+                    Farbe, Größe und Verglasung. Nutzen Sie unser
+                    benutzerfreundliches Konfigurationstool, um Ihre Auswahl zu
+                    treffen und sicherzustellen, dass Ihre Fenster perfekt zu
+                    Ihrem Zuhause passen.
+                  </p>
+                </div>
               </div>
-              <div className="mask1">asd</div>
-            </div>
-          </div>
-          <div>
-            <div className="grid grid-cols-1 lg:grid-cols-2  items-center mb-6">
-              <div className="mask2"></div>
-              <div className="text-left">
-                <p className="font-bold">Schritt 2 </p>
-                <h3 className="mb-2 mt-0 uppercase font-bold  text-[24px] lg:text-[42px] text-orange">
-                  Angebot erstellen lassen
-                </h3>
-                <p className="-ml-0">
-                  Sobald Sie Ihre Fenster konfiguriert haben, ist es Zeit, Ihre
-                  Bestellung aufzugeben. Unser Online-Bestellvorgang ist schnell
-                  und unkompliziert. Geben Sie einfach Ihre Konfigurationen ein,
-                  überprüfen Sie Ihre Auswahl und schließen Sie Ihre Bestellung
-                  ab. Unser Team steht Ihnen zur Verfügung, um eventuelle Fragen
-                  zu beantworten und sicherzustellen, dass Ihre Bestellung
-                  reibungslos verläuft.
-                </p>
+              <div className="grid grid-cols-1 lg:grid-cols-1  mb-6">
+                <div className="mask2"></div>
+                <div className="text-left">
+                  <p className="font-bold">Schritt 2 </p>
+                  <h3 className="mb-2 mt-0 uppercase font-bold  text-[24px] lg:text-[24px] text-orange">
+                    Angebot erstellen lassen
+                  </h3>
+                  <p className="-ml-0">
+                    Sobald Sie Ihre Fenster konfiguriert haben, ist es Zeit,
+                    sich ein passendes Angebot erstellen zu lassen. Unser Team
+                    aus professionellen Fensterplanern wird Ihnen passendes
+                    unverbindliches Angebot erstellen. Ein Berater wird sich
+                    daraufhin mit Ihnen in Verbindung setzten um gemeinsam alle
+                    Details zu besprechen.
+                  </p>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 lg:grid-cols-1 ">
+                <div className="text-left">
+                  <div className="mask3">asd</div>
+                  <p className="font-bold">Schritt 3 </p>
+                  <h3 className="mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[24px] text-orange">
+                    Maße nehmen
+                  </h3>
+                  <p>
+                    Sollten Ihnen das Angebot zusagen, schicken wir Ihnen einen
+                    Monteur zu Ihrer Adresse um die Maße Ihres Fensters im
+                    Detail zu vermessen. Nach einer Prüfung unserer Profis,
+                    werden wir im Anschluss Ihre Wunschfesnter bestellen.
+                    <br />
+                    Nach der Lieferung können wir die Fenster von unseren
+                    Monteuren fachgerecht installiert werden.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2  items-center">
-            <div className="text-left">
-              <p className="font-bold">Schritt 3 </p>
-              <h3 className="mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[52px] text-orange">
-                Liefern & Montieren
-              </h3>
-              <p className="lg:ml-12">
-                Sobald Ihre Fenster geliefert wurden, ist unser erfahrenes
-                Montageteam bereit, sie professionell in Ihrem Zuhause zu
-                installieren. Wir vereinbaren einen geeigneten Termin für die
-                Montage und sorgen dafür, dass Ihre neuen Fenster fachgerecht
-                und effizient installiert werden. Genießen Sie sofort die
-                Vorteile Ihrer neuen Fenster und profitieren Sie von einer
-                verbesserten Energieeffizienz, erhöhtem Komfort und einer
-                ansprechenden Ästhetik.
-              </p>
-            </div>
-            <div className="mask1">asd</div>
           </div>
         </div>
-
-        <div className="mb-12 mt-12">
+        <div className="grid bg-orange rounded-xl mt-24 text-white p-6 lg:p-12 mb-24 grid-cols-1 lg:grid-cols-2 text-left">
+          <div>
+            <h3>
+              {" "}
+              Sie wünschen sich eine direkte Beratung am Telefon oder haben
+              Fragen?
+            </h3>
+          </div>
+          <div></div>
+        </div>
+        <div className="mb-24 mt-24">
           {" "}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <p className="text-[18px] text-left p-6  bg-white">
-              <p className="font-bold text-[32px] mb-4">
+            <p className="text-[16px] text-left p-2  bg-white">
+              <p className="font-bold text-[24px] mb-2">
                 Hervorragende Qualität
                 <br />{" "}
               </p>
@@ -130,8 +137,8 @@ export default function Howto() {
               Fenster wird sorgfältig hergestellt, um eine lange Lebensdauer und
               eine erstklassige Leistung zu gewährleisten.
             </p>
-            <p className="text-[18px] text-left p-6  bg-white">
-              <p className="font-bold text-[32px] mb-4">
+            <p className="text-[16px] text-left p-2  bg-white">
+              <p className="font-bold text-[24px] mb-2">
                 Vielfalt an Auswahlmöglichkeiten
                 <br />{" "}
               </p>
@@ -140,8 +147,8 @@ export default function Howto() {
               finden Sie eine breite Palette an Optionen, um Ihren individuellen
               Geschmack und Stil zu treffen.
             </p>
-            <p className="text-[18px] text-left p-6  bg-white">
-              <p className="font-bold text-[32px] text-orange mb-4">
+            <p className="text-[16px] text-left p-2  bg-white">
+              <p className="font-bold text-[24px] mb-2">
                 Energieeffizienz
                 <br />{" "}
               </p>
@@ -151,8 +158,8 @@ export default function Howto() {
               und hochwertige Verglasung können Sie Ihre Energiekosten
               reduzieren und gleichzeitig das Raumklima optimieren.
             </p>
-            <p className="text-[18px] text-left p-6  bg-white">
-              <p className="font-bold text-[32px] mb-4">
+            <p className="text-[16px] text-left p-2  bg-white">
+              <p className="font-bold text-[24px] mb-2">
                 Langjährige Garantie
                 <br />{" "}
               </p>
@@ -163,7 +170,7 @@ export default function Howto() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 mt-24">
           <div className="rounded-lg drop-shadow-lg w-full bg-white overflow-hidden">
             <Image
               src={"/images/bgimages/window4.jpg"}
@@ -227,54 +234,6 @@ export default function Howto() {
                 Kaufprozesses zu helfen.
               </p>
             </div>
-          </div>
-        </div>
-        <div className="grid grid-cols-1 lg:grid-cols-2 mt-24">
-          <div className="rounded-xl bg-white text-black p-12 text-left">
-            <h3 className="font-bold mt-2 mb-0 uppercase text-[52px]">
-              Einfach
-            </h3>
-            <h3 className="font-bold -mt-3 mb-4 first-line:mb-2 uppercase text-[52px] text-orange">
-              Konfigurieren
-            </h3>
-            <p>
-              Mit unserem Konfigurator könnnen Sie sich ganz unbeschwert Ihre
-              Wunschfenster zusammestellen und uns im Anschluss Ihre
-              Konfiguration schicken. Unser Serviceteam erstellt Ihnen darauf
-              ein unverbindliches Angebot.
-            </p>
-            <ul className="mt-4s">
-              <li className="mb-2">
-                <FontAwesomeIcon
-                  className="inline-block pl-2 self-center text-[16px] text-orange mr-2"
-                  icon={faCheck}
-                />
-                einfache und schnelle Konfiguration
-              </li>
-              <li className="mb-2">
-                <FontAwesomeIcon
-                  className="inline-block pl-2 self-center text-[16px] text-orange mr-2"
-                  icon={faCheck}
-                />
-                Auswahl an Marke, Modell, Type Farbe und Varianten
-              </li>
-              <li className="mb-2">
-                <FontAwesomeIcon
-                  className="inline-block pl-2 self-center text-[16px] text-orange mr-2"
-                  icon={faCheck}
-                />
-                unverbindliches Angebot erstellen lassen
-              </li>
-            </ul>
-          </div>
-          <div className="drop-shadow-lg max-h-[650px] self-center rounded-[40px] overflow-hidden">
-            <Image
-              src={"/images/bgimages/window3.jpg"}
-              alt="Fensterkonfiguration, Fenster"
-              width={720}
-              height={300}
-              className="h-auto w-[80%] mx-auto rounded-[40px]"
-            />
           </div>
         </div>
       </div>

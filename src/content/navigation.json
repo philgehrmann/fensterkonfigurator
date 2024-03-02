@@ -11,13 +11,8 @@
       "subnavIdent": "nav_fenster"
     },
     {
-      "name": "So einfach geht's",
-      "path": "/so-einfach",
-      "subnavIdent": "nav_produkte"
-    },
-    {
       "name": "Konfigurator",
-      "path": "/konfigurator"
+      "path": "/konfiguratorneu"
     },
     {
       "name": "Montageservice",

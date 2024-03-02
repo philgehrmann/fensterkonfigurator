@@ -7,11 +7,9 @@ export default async function Home() {
   return (
     <div>
       <MainSlider page="home" />
-
       <section>
         <Howto />
       </section>
-      <Partnersection />
     </div>
   );
 }

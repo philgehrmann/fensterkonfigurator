@@ -17,8 +17,10 @@ export default function Preis() {
     if (state.colorPreis !== "") {
       pirce = pirce + state.colorPreis;
     }
+    if (state.verglasungPreis !== "") {
+      pirce = pirce + state.verglasungPreis;
+    }
     pirce = Number(pirce.toFixed(2));
-    console.log(pirce);
     if (isNaN(pirce)) {
       setFullPrice(0);
     } else {
@@ -29,6 +31,12 @@ export default function Preis() {
 
   useEffect(() => {
     calcPrice();
-  }, [state.fensterpreis, state.width, state.height, state.colorPreis]);
+  }, [
+    state.fensterpreis,
+    state.width,
+    state.height,
+    state.colorPreis,
+    state.verglasungPreis,
+  ]);
   return <div>* {fullPrice} ,- €</div>;
 }

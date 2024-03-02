@@ -26,7 +26,8 @@ const config: Config = {
       'orangelight': '#c9604e',
       'lightgray': '#f7f7f7',
       'fwhite': 'red',
-      'Antrazitgrau': "#282F31"
+      'Antrazitgrau': "#282F31",
+      'black-rgba': 'rgba(0, 0, 0, 0.54)',
     },
     extend: {
       backgroundImage: {

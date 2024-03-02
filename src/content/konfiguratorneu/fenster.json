@@ -1,0 +1,355 @@
+{
+  "fenster": [
+    {
+      "id": "drutex",
+      "hersteller": "Drutex",
+      "logo": "",
+      "fenster": [
+        {
+          "name": "Iglo 5",
+          "image": "",
+          "beschreibung": "",
+          "fenstervarianten": [
+            {
+              "id": "1fl",
+              "variants": [
+                {
+                  "name": "Fest",
+                  "preis": "0.26325",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "fest"
+                },
+                {
+                  "id": "12",
+                  "name": "Fester Flügel",
+                  "preis": "0.37",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "festerfluegel"
+                },
+                {
+                  "id": "13",
+                  "name": "Dreh Links",
+                  "preis": "0.46",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehlinks"
+                },
+                {
+                  "id": "14",
+                  "name": "Dreh Rechts",
+                  "preis": "0.46",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehrechts"
+                },
+                {
+                  "id": "15",
+                  "name": "Kipp",
+                  "preis": "0.43",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "kipp"
+                },
+                {
+                  "id": "16",
+                  "name": "Dreh-Kipp Links",
+                  "preis": "0.51",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehkipplinks"
+                },
+                {
+                  "id": "17",
+                  "name": "Dreh-Kipp Rechts",
+                  "preis": "0.51",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehkipprechts"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fenstertypen": [
+        {
+          "id": "1fl",
+          "name": "1 Flügel",
+          "className": "1fl"
+        },
+        {
+          "id": "2fl",
+          "name": "2 Flügel",
+          "className": "2fl"
+        },
+        {
+          "id": "3fl",
+          "name": "3 Flügel",
+          "className": "3fl"
+        },
+        {
+          "id": "OL",
+          "name": "Oberlicht",
+          "className": "ol"
+        },
+        {
+          "id": "UL",
+          "name": "Unterlicht",
+          "className": "ul"
+        }
+      ],
+      "fensterfarben": [{}],
+      "fensterverglasung": ""
+    },
+    {
+      "id": "schueco",
+      "hersteller": "Schüco",
+      "logo": "",
+      "fenster": [
+        {
+          "name": "Iglo 5",
+          "image": "",
+          "beschreibung": "",
+          "fenstervarianten": [
+            {
+              "id": "1fl",
+              "variants": [
+                {
+                  "name": "Fest",
+                  "preis": "0.26325",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "fest"
+                },
+                {
+                  "id": "12",
+                  "name": "Fester Flügel",
+                  "preis": "0.37",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "festerfluegel"
+                },
+                {
+                  "id": "13",
+                  "name": "Dreh Links",
+                  "preis": "0.46",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehlinks"
+                },
+                {
+                  "id": "14",
+                  "name": "Dreh Rechts",
+                  "preis": "0.46",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehrechts"
+                },
+                {
+                  "id": "15",
+                  "name": "Kipp",
+                  "preis": "0.43",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "kipp"
+                },
+                {
+                  "id": "16",
+                  "name": "Dreh-Kipp Links",
+                  "preis": "0.51",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehkipplinks"
+                },
+                {
+                  "id": "17",
+                  "name": "Dreh-Kipp Rechts",
+                  "preis": "0.51",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehkipprechts"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fenstertypen": [
+        {
+          "id": "1fl",
+          "name": "1 Flügel",
+          "className": "1fl"
+        },
+        {
+          "id": "2fl",
+          "name": "2 Flügel",
+          "className": "2fl"
+        },
+        {
+          "id": "3fl",
+          "name": "3 Flügel",
+          "className": "3fl"
+        },
+        {
+          "id": "OL",
+          "name": "Oberlicht",
+          "className": "ol"
+        },
+        {
+          "id": "UL",
+          "name": "Unterlicht",
+          "className": "ul"
+        }
+      ],
+      "fensterfarben": [{}],
+      "fensterverglasung": ""
+    },
+    {
+      "id": "veka",
+      "hersteller": "Veka",
+      "logo": "",
+      "fenster": [
+        {
+          "name": "Iglo 5",
+          "image": "",
+          "beschreibung": "",
+          "fenstervarianten": [
+            {
+              "id": "1fl",
+              "variants": [
+                {
+                  "name": "Fest",
+                  "preis": "0.26325",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "fest"
+                },
+                {
+                  "id": "12",
+                  "name": "Fester Flügel",
+                  "preis": "0.37",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "festerfluegel"
+                },
+                {
+                  "id": "13",
+                  "name": "Dreh Links",
+                  "preis": "0.46",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehlinks"
+                },
+                {
+                  "id": "14",
+                  "name": "Dreh Rechts",
+                  "preis": "0.46",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehrechts"
+                },
+                {
+                  "id": "15",
+                  "name": "Kipp",
+                  "preis": "0.43",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "kipp"
+                },
+                {
+                  "id": "16",
+                  "name": "Dreh-Kipp Links",
+                  "preis": "0.51",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehkipplinks"
+                },
+                {
+                  "id": "17",
+                  "name": "Dreh-Kipp Rechts",
+                  "preis": "0.51",
+                  "minWidth": "350",
+                  "maxWidth": "3000",
+                  "minHeight": "210",
+                  "maxHeight": "3000",
+                  "className": "drehkipprechts"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "fenstertypen": [
+        {
+          "id": "1fl",
+          "name": "1 Flügel",
+          "className": "1fl"
+        },
+        {
+          "id": "2fl",
+          "name": "2 Flügel",
+          "className": "2fl"
+        },
+        {
+          "id": "3fl",
+          "name": "3 Flügel",
+          "className": "3fl"
+        },
+        {
+          "id": "OL",
+          "name": "Oberlicht",
+          "className": "ol"
+        },
+        {
+          "id": "UL",
+          "name": "Unterlicht",
+          "className": "ul"
+        }
+      ],
+      "fensterfarben": [{}],
+      "fensterverglasung": ""
+    }
+  ]
+}

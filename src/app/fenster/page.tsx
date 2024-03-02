@@ -12,6 +12,7 @@ export default function Page() {
   return (
     <>
       <MainSlider page="fenster" />
+      <h3> Wir setzen bei unseren Fenstern auf Qualität und Langlebig</h3>
       <div className=" lg:max-w-[75%] mx-auto">
         {content.fenster.map((item, index) => {
           return (

@@ -1,0 +1,24 @@
+{
+  "variants": [
+    {
+      "id": "2f",
+      "name": "2-fach Verglasung",
+      "price": 0
+    },
+    {
+      "id": "2fw",
+      "name": "2-fach Verglasung (warme Kante)",
+      "price": 0.63
+    },
+    {
+      "id": "3f",
+      "name": "3-fach Verglasung",
+      "price": 2.84
+    },
+    {
+      "id": "3fw",
+      "name": "3-fach Verglasung (warme Kante)",
+      "price": 4.1
+    }
+  ]
+}

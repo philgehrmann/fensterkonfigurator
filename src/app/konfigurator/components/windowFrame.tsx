@@ -13,7 +13,14 @@ export default function WindowFrame({ frame }: { frame: string }) {
           <div className="w-full border-b-[2px] mb-2 border-black text-center text-[11px]">
             {state.width} mm
           </div>
-          <div className={"fenster-basic " + state.colorClass}></div>
+          <div
+            className={
+              "fenster-basic " +
+              state.colorClass +
+              " " +
+              state.fenstervariantclass
+            }
+          ></div>
           <div className=" h-[400px] grid items-center  border-l-[2px] mb-0 border-black text-center text-[11px] absolute -right-[15%] top-[6%]">
             <p className="rotate-90"> {state.height} mm</p>
           </div>

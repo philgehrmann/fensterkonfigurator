@@ -298,24 +298,58 @@ h3 {
   mask-image: url("../../public/images/blob1.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  width: 600px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 }
 
 .mask2 {
-  background: url("../../public/images/bgimages/window5.jpg") no-repeat;
+  background: url("../../public/images/bgimages/angebot.jpg") no-repeat;
   background-size: cover;
   mask-image: url("../../public/images/blob2.svg");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
-  width: 600px;
-  height: 600px;
+  width: 350px;
+  height: 350px;
 }
-@media only screen and (max-width: 1024px) {
-  .mask1,
-  .mask2 {
-    width: 300px;
-    height: 300px;
-    display: none;
-  }
+
+.mask3 {
+  background: url("../../public/images/bgimages/masse.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  mask-image: url("../../public/images/blob1.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 350px;
+  height: 350px;
+}
+
+.mask4 {
+  background: url("../../public/images/bgimages/window5.jpg") no-repeat;
+  background-size: cover;
+  mask-image: url("../../public/images/blob1.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+}
+
+.mask5 {
+  background: url("../../public/images/bgimages/angebot.jpg") no-repeat;
+  background-size: cover;
+  mask-image: url("../../public/images/blob2.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
+}
+
+.mask6 {
+  background: url("../../public/images/bgimages/masse.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  mask-image: url("../../public/images/blob1.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  width: 250px;
+  height: 250px;
 }

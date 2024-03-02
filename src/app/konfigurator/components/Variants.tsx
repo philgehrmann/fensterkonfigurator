@@ -15,8 +15,10 @@ export default function Variants() {
     minheight: any,
     maxheight: any,
     minWidth: any,
-    maxWidth: any
+    maxWidth: any,
+    variantClassname: any
   ) => {
+    console.log(id);
     if (state.fenstervariant !== id || state.fenstervariant === "") {
       dispatch({ type: "UPDATE_VARIANT", payload: id });
       dispatch({ type: "UPDATE_FENSTERPREIS", payload: price });
@@ -24,6 +26,7 @@ export default function Variants() {
       dispatch({ type: "UPDATE_MAXHEIGHT", payload: maxheight });
       dispatch({ type: "UPDATE_MINWIDTH", payload: minWidth });
       dispatch({ type: "UPDATE_MAXWIDTH", payload: maxWidth });
+      dispatch({ type: "UPDATE_VARIANTCLASS", payload: variantClassname });
       dispatch({
         type: "UPDATE_TRANSLATION",
         payload: name,
@@ -37,12 +40,12 @@ export default function Variants() {
       dispatch({ type: "UPDATE_MAXHEIGHT", payload: "" });
       dispatch({ type: "UPDATE_MINWIDTH", payload: "" });
       dispatch({ type: "UPDATE_MAXWIDTH", payload: "" });
+      dispatch({ type: "UPDATE_VARIANTCLASS", payload: "" });
     }
   };
 
   const variants =
     content.variants.filter((variant) => variant.id === state.fenstertyp) || [];
-  cons;
   return (
     <div className="self-center">
       <h3 className="m-0">Öffnungsrichtung</h3>
@@ -60,6 +63,18 @@ export default function Variants() {
                   ? "border-[3px] border-orange"
                   : " border-white")
               }
+              onClick={() =>
+                updateVariants(
+                  variant.id,
+                  variant.preis,
+                  variant.name,
+                  variant.minHeight,
+                  variant.maxHeight,
+                  variant.minWidth,
+                  variant.maxWidth,
+                  variant.className
+                )
+              }
             >
               <div
                 className={
@@ -67,21 +82,7 @@ export default function Variants() {
                   variant.className
                 }
               ></div>
-              <p
-                key={index}
-                className="text-[12px]"
-                onClick={() =>
-                  updateVariants(
-                    variant.id,
-                    variant.preis,
-                    variant.name,
-                    variant.minHeight,
-                    variant.maxHeight,
-                    variant.minWidth,
-                    variant.maxWidth
-                  )
-                }
-              >
+              <p key={index} className="text-[12px]">
                 {variant.name}
               </p>
             </div>

@@ -80,14 +80,6 @@ export default function Footer() {
                 <li>
                   <Link
                     className="text-[14px] mt-4 leading-8 hover:underline"
-                    href="/energieeffizienz"
-                  >
-                    So einfach gehts
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="text-[14px] mt-4 leading-8 hover:underline"
                     href=""
                   >
                     Konfigurator

@@ -17,11 +17,19 @@ import Fenstertype from "./components/Type";
 import WindowFrame from "./components/windowFrame";
 import Farbe from "./components/Farbe";
 import { Button } from "@nextui-org/react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay } from "swiper/modules";
+import { Checkbox, Input } from "@nextui-org/react";
+import { useSwiper } from "swiper/react";
+import Verglasung from "./components/Verglasung";
 
 export default function Page() {
   const { state, dispatch } = useContext(KonfiguratorContext);
   const [currStep, setCurrStep] = useState(1);
   const steps = ["step-hersteller", "step-fenstermodell"];
+  const [showInfo, setShowInfo] = useState(false);
+  const swiper = useSwiper();
+  const [showFormular, setShowFormular] = useState(false);
 
   const toggleStepNavigation = (step: any) => {
     let allSteps = document.querySelectorAll(".step");
@@ -33,6 +41,29 @@ export default function Page() {
     actualStep?.classList.remove("hidden");
     actualStep?.classList.add("block");
     setCurrStep(step);
+  };
+
+  const getCookie = (cname: any) => {
+    let name = cname + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(";");
+    for (let i = 0; i < ca.length; i++) {
+      let c = ca[i];
+      while (c.charAt(0) == " ") {
+        c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+        return c.substring(name.length, c.length);
+      }
+    }
+    return "";
+  };
+
+  const setCookie = (cname: any, cvalue: any, exdays: any) => {
+    const d = new Date();
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
+    let expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
   };
 
   const nextStep = () => {
@@ -63,15 +94,88 @@ export default function Page() {
     }
   };
 
-  useEffect(() => {}, [currStep]);
+  const removeInfoScreen = () => {
+    const infocookie = getCookie("infoscreen");
+    if (infocookie === "") {
+      setCookie("infoscreen", true, 7);
+      setShowInfo(false);
+    }
+  };
+  const checkInfoScreen = () => {
+    const infocookie = getCookie("infoscreen");
+    console.log(infocookie);
+    if (infocookie === "true") {
+      setShowInfo(false);
+    } else {
+      setShowInfo(true);
+    }
+  };
+
+  const showForm = () => {
+    setShowFormular(true);
+  };
+
+  useEffect(() => {
+    checkInfoScreen();
+  }, [currStep]);
 
   return (
-    <div className="konfigurator-wrapper overflow-x-hidden  relative h-[100vh]">
+    <div className="konfigurator-wrapper overflow-hidden  relative h-[100vh]">
       <div className=" bg-white grid grid-cols-1 xl:grid-cols-[10%_40%_50%] xl:mt-[115px] ">
         <div className="hidden xl:block"></div>
-        <div className="h-[80%] drop-shadow-lg rounded-b-xl bg-white relative z-[100]">
+        <div
+          className={
+            "w-full  p-12 overflow-y-scroll h-[90%]  drop-shadow-lg rounded-b-xl bg-white relative z-[100]" +
+            (showFormular ? " block " : " hidden")
+          }
+        >
+          <div className="grid grid-cols-2 items-center">
+            <h3 className="mt-2 mb-2">Angebot abschicken</h3>
+            <div className="justify-self-end text-sm">schließen</div>
+          </div>
+          <p className="mb-4 text-sm">
+            {" "}
+            Bitte vervollständigen Sie Ihre Daten, damit wir Sie im nachhinein
+            konkaktieren und Ihnen ihr individuelles Angebot zuschicken können.
+          </p>
+          <div className="">
+            <form>
+              <div className="grid w-full grid-cols-1 gap-4">
+                <Input type="text" label="Anrede" required className="my-2" />
+                <Input type="text" label="Vorname" required className="my-2" />
+                <Input type="text" label="Nachname" required className="my-2" />
+                <Input
+                  type="text"
+                  label="Emailadresse"
+                  required
+                  className="my-2"
+                />
+                <Input type="text" label="Straße" required className="my-2" />
+                <Input type="text" label="PLZ" required className="my-2" />
+                <Input type="text" label="Ort" required className="my-2" />
+                <Checkbox>
+                  Ja ich möchte auch den Montageservice nutzen.
+                  <p className="text-[11px]">
+                    {" "}
+                    Ohne Montageservice berechnen wir den Versand der Fenster
+                    seperat.
+                  </p>
+                </Checkbox>
+                <Button className="bg-orange text-white">
+                  Angebot erstellen lassen
+                </Button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div
+          className={
+            "h-[80%] drop-shadow-lg rounded-b-xl bg-white relative z-[100]" +
+            (showFormular ? " hidden " : " block")
+          }
+        >
           <div className="grid grid-cols-1 lg:grid-cols-[35%_65%] h-[80%] bg-lightgray items-center">
-            <div className="  bg-lightgray lg:h-[600px] grid items-center">
+            <div className=" bg-red lg:h-[600px] grid items-center">
               <div className="konfigNav">
                 <ul>
                   <li
@@ -222,14 +326,14 @@ export default function Page() {
                       (currStep === 7
                         ? " bg-white border-l-orange border-l-[4px]"
                         : "") +
-                      (state.fenstermasse === ""
+                      (state.color === ""
                         ? " opacity-50 pointer-events-none"
                         : "")
                     }
                   >
                     <h4>
                       Glas
-                      {state.fenstermasse ? (
+                      {state.verglasung ? (
                         <FontAwesomeIcon
                           className="inline-block pl-2 self-center text-[16px] text-orange"
                           icon={faCheck}
@@ -261,24 +365,25 @@ export default function Page() {
               <div className="hidden step step-6">
                 {state.fenstervariant !== "" && <Farbe />}
               </div>
+              <div className="hidden step step-7">
+                {state.color !== "" && <Verglasung />}
+              </div>
             </div>
             <div className="bg-white p-6 col-span-2 overflow-y-scroll border-t-[2px] border-gray z-[150] rounded-b-lg">
               <div className="grid grid-cols-[60%_40%] items-center">
                 <div>
                   <Button
                     size="lg"
-                    variant="bordered"
-                    className="bg-transparent text-orange mr-4"
-                    onClick={() => prevStep()}
+                    className="bg-orange text-white"
+                    onClick={() => showForm()}
                   >
-                    Zurück
+                    Konfiguration abschicken
                   </Button>
                   <Button
                     size="lg"
-                    className="bg-orange text-white"
-                    onClick={() => nextStep()}
+                    className="bg-transparent text-black text-[11px]"
                   >
-                    Weiter
+                    Zusammenfassung ansehen
                   </Button>
                 </div>
                 <div className="justify-self-end text-right">
@@ -310,6 +415,70 @@ export default function Page() {
           </div>
         </div>
       </div>
+      {showInfo && (
+        <div className="infoscreen grid fixed top-0 z-[300] bg-black-rgba w-full h-full items-center">
+          <div className="infocontent rounded-xl bg-white p-12 lg:max-w-[75%] mx-auto text-center ">
+            <h3 className="text-orange font-bold uppercase mb- mt-0 mb-0">
+              Willkommen beim Fensterkonfigurator
+            </h3>
+            <p className="mb-12"> Ihr unverbindlicher Fensterkonfigurator.</p>
+            <div className="grid grid-cols-3 text-left gap-24">
+              <div>
+                <div className="mask4"></div>
+                <p className="text-sm">Schritt 1</p>
+                <p className="font-bold">Fenster zusammenstellen</p>
+                <p className="text-sm mt-2">
+                  {" "}
+                  Stellen Sie Ihre Fenster nach Ihren Wünschen zusammen und
+                  erhalten sofort einen Preisvorschlag für Ihre Konfiguration.
+                  Sollten Sie mit der Konfiguration zufrieden sein. Bestätigen
+                  Sie ihre Konfiguration mit dem Button "Konfiguration prüfen".
+                </p>
+              </div>
+              <div>
+                <div className="mask5"></div>
+                <p className="text-sm">Schritt 2</p>
+                <p className="font-bold">Konfiguration prüfen</p>
+                <p className="text-sm mt-2">
+                  {" "}
+                  Lassen Sie sich Ihre Konfiguration anzeigen und prüfen Sie
+                  Ihre Auswahl. Sollten Ihre Einstellungen passen, bestätigen
+                  Sie die Auswahl mit "Angebot anfragen". Ihre Konfiguration
+                  wird dann von unserem Team geprüft und individuell
+                  zusammengestellt.
+                </p>
+              </div>
+              <div>
+                <div className="mask6"></div>
+                <p className="text-sm">Schritt 2</p>
+                <p className="font-bold">Angebotserstellung</p>
+                <p className="text-sm mt-2">
+                  {" "}
+                  Unsere Fensterplaner werden Ihnen ein unverbindliches Angebot
+                  auf der Grundlage Ihres Wunschs erstellen und Ihnen zeitnah
+                  per Email zusenden. Sollte Sie unser Angebot überzeugen,
+                  werden wir persönlich bei Ihnen ein Aufmaß Vorort anfertigen
+                  und Ihre Fenster bestellen.
+                </p>
+              </div>
+            </div>
+            <div className="text-sm mt-12 text-left">
+              <div className="grid grid-cols-1 items-center justify-items-end ">
+                <div className="self-end justify-items-end ">
+                  <Button
+                    size="lg"
+                    variant="bordered"
+                    className="bg-orange text-white mr-4"
+                    onClick={() => removeInfoScreen()}
+                  >
+                    Konfiguration starten
+                  </Button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

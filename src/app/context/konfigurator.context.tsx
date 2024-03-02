@@ -14,6 +14,7 @@ const initialState = {
   fenstermodell: "",
   fenstertyp: "",
   fenstervariant: "",
+  fenstervariantclass: "",
   fensterpreis: "",
   fensterpreisfull: 0,
   minheight: "",
@@ -27,6 +28,8 @@ const initialState = {
   translationTyp: "",
   translationModell: "",
   translationVariant: "",
+  verglasung: "",
+  verglasungPreis: "",
 };
 
 const reducer = (state: any, action: any) => {
@@ -115,6 +118,26 @@ const reducer = (state: any, action: any) => {
       return {
         ...state,
         colorClass: action.payload,
+      };
+    case "UPDATE_VERGLASUNG":
+      return {
+        ...state,
+        verglasung: action.payload,
+      };
+    case "UPDATE_VERGLASUNGPREIS":
+      return {
+        ...state,
+        verglasungPreis: action.payload,
+      };
+    case "UPDATE_VERGLASUNGPREIS":
+      return {
+        ...state,
+        verglasungPreis: action.payload,
+      };
+    case "UPDATE_VARIANTCLASS":
+      return {
+        ...state,
+        fenstervariantclass: action.payload,
       };
 
     default:

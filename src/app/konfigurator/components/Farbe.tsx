@@ -49,7 +49,8 @@ export default function Farbe() {
                     : " border-[5px] border-transparent")
                 }
               ></div>
-              <p className="text-[11px]"> {color.name}</p>
+              <p className="text-[11px] mt-2"> {color.name}</p>
+              <p className="text-[11px] mt-1">{"+" + color.price + "€"}</p>
             </div>
           );
         })}
@@ -76,7 +77,8 @@ export default function Farbe() {
                     : " border-[5px] border-transparent")
                 }
               ></div>
-              <p className="text-[11px]"> {color.name}</p>
+              <p className="text-[11px] mt-2"> {color.name}</p>
+              <p className="text-[11px] mt-1">{"+" + color.price + "€"}</p>
             </div>
           );
         })}

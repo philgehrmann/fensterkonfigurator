@@ -8,8 +8,6 @@ export default function Fenstertype() {
   const { state, dispatch } = useContext(KonfiguratorContext);
 
   const updateFensterType = (id: any, name: any) => {
-    console.log(id);
-    console.log(id);
     if (state.fenstertyp !== id || state.fenstertyp === "") {
       dispatch({ type: "UPDATE_FENSTERTYP", payload: id });
       dispatch({
