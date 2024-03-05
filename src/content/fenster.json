@@ -1,19 +1,21 @@
 {
   "fenster": [
     {
-      "title": "Aluminium",
+      "title": "Drutex",
+      "logo":"",
       "fenster": [
         {
-          "name": "THERMOMAX 5 CLASSIC KUNSTSTOFFFENSTER",
-          "image": "/images/fenster/fenster-basic.png",
+          "name": "Iglo 5",
+          "image": "/images/fenster/iglo5/iglo5.webp",
           "price": 149,
-          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
+          "id": "IGLO5",
           "details": {}
         },
         {
-          "name": "Fenster2",
-          "image": "/images/fenster/fenster-basic.png",
-          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER_2",
+          "name": "Iglo 5 Classic",
+          "image": "/images/fenster/iglo5/iglo5classic.webp",
+          "price": 149,
+          "id": "THERMOMAX_5_CLASSIC_KUNSTSTOFFFENSTER",
           "details": {}
         },
         {

@@ -1,10 +1,12 @@
 {
   "fenster": [
     {
-      "id": "VEKA_SOFTLINE_70_AD",
+      "id": "IGLO5",
       "details": [
         {
-          "name": "VEKA SOFTLINE 70 AD",
+          "hersteller": "Drutex",
+          "name": "IGLO5",
+          "mainimage": "/images/fenster/iglo5/iglo5.webp",
           "image": [
             {
               "src": "/images/veka/veka_softline70ad-8.webp",

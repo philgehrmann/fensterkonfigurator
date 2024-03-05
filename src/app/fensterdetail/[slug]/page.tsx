@@ -36,7 +36,16 @@ export default function Page({ params }: { params: { slug: string } }) {
   let windowContent = content.fenster.filter((item) => item.id === params.slug);
 
   return (
-    <section className="lg:max-w-[80%] mx-auto lg:mt-[150px]">
+    <section className="mx-auto lg:mt-[125px]">
+      <div className="bgimage detail max-w-[80%] mx-auto">
+       <Image
+                            src={windowContent[0].details[0].mainimage}
+                            alt={windowContent[0].details[0].name}
+                            width={1400}
+                            height={1000}
+                            className="h-auto mx-auto"
+                          />
+                          </div>
       <div className="grid grid-cols-1 lg:grid-cols-[60%_40%] w-full lg:p-12 text-white">
         <div className="image-layer">
           <DetailImageSlider article={windowContent} />

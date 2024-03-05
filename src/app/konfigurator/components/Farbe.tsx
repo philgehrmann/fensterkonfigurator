@@ -22,7 +22,7 @@ export default function Farbe() {
   };
 
   const colors =
-    content.farbe.filter((hersteller) => hersteller.id === state.hersteller) ||
+    content.farbe.filter((modell) => modell.id === state.fenstermodell) ||
     [];
   return (
     <div className="self-center">
