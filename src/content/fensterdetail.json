@@ -22,6 +22,29 @@
           "linkname": "VEKA_SOFTLINE_70_AD"
         }
       ]
+    },
+    {
+      "id": "IGLO5CLASSIC",
+      "details": [
+        {
+          "hersteller": "Drutex",
+          "name": "IGLO 5 CLASSIC",
+          "mainimage": "/images/fenster/iglo5/iglo5.webp",
+          "image": [
+            {
+              "src": "/images/veka/veka_softline70ad-8.webp",
+              "alt": ""
+            },
+            {
+              "src": "/images/fenster/fenster-basic.png",
+              "alt": ""
+            }
+          ],
+          "price": 149,
+          "beschreibung": "SOFTLINE 70 AD mit 70 mm Basis-Bautiefe ist der Klassiker im VEKA Profilsortiment. Sein zeitloses Design mit der leicht abgerundeten Kontur und besonders geringen Ansichtsbreiten findet sich auch in den nachfolgenden Profilgenerationen wieder. Wie alle VEKA Systeme bietet SOFTLINE 70 AD mit einem umfassenden Programm an Zusatzprofilen eine große Vielfalt von Konstruktionsmöglichkeiten bei effizienter Fensterfertigung. Sogar hochisolierende Dreifachverglasungen sind bei nicht zu großen Flügelmaßen in SOFTLINE 70 AD verwendbar.",
+          "linkname": "VEKA_SOFTLINE_70_AD"
+        }
+      ]
     }
   ]
 }

@@ -6,6 +6,7 @@ import content from "../../../content/konfigurator/konfigurator.json";
 import { AnyARecord } from "dns";
 import Image from "next/image";
 import { ScrollShadow } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Fenster() {
   const { state, dispatch } = useContext(KonfiguratorContext);
@@ -58,6 +59,14 @@ export default function Fenster() {
               />
               <p className="text-[14px] px-4 text-center pt-6">
                 <span className="font-bold">{fenster.name}</span>
+                <Link
+                  href={"/fensterdetail/" + encodeURIComponent(fenster.url)}
+                  key={index}
+                  className=" text-center block text-[11px] mt-2"
+                  target="_blank"
+                >
+                  Details ansehen
+                </Link>
                 <ScrollShadow
                   hideScrollBar
                   className="w-[150px] h-[200px]"

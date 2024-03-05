@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { faCheck, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Button } from "@nextui-org/react";
+import Link from "next/link";
 
 export default function Howto() {
   return (
@@ -26,31 +28,77 @@ export default function Howto() {
           Vielzahl von Kunden gewonnen, die auf der Suche nach hochwertigen
           Fenstern zu erschwinglichen Preisen sind.
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mt-48  p-12 lg:drop-shadow-lg bg-white mb-24 text-center">
+        <h3 className="mt-24"> Unsere Hersteller</h3>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:mt-12  p-12 lg:drop-shadow-lg bg-white mb-24 text-center">
           <div className="lg:border-r-1 border-gray">
             <p className="text-[52px] text-center lg:text-[82px] text-orange">
-              1424
+              <Image
+                src="/images/logos/logo_drutex.webp"
+                alt="Drutex"
+                width={150}
+                height={150}
+                className="inline"
+              />
             </p>
-            <p className="text-[24px] lg:text-[32px] text-black">
-              verkaufte Fenster
+            <p className=" text-black mt-4 p-4">
+              Drutex ist ein führender europäischer Hersteller von Fenstern,
+              Türen und Rollläden mit Sitz in Polen. Das Unternehmen wurde 1985
+              gegründet und hat sich seitdem zu einem bedeutenden Akteur auf dem
+              Baumarkt entwickelt. Drutex zeichnet sich durch innovative
+              Technologien, hochwertige Materialien und modernes Design aus.
+              Ihre Produkte werden in ganz Europa vertrieben und haben sich
+              durch ihre Qualität und Zuverlässigkeit einen guten Ruf erworben.
             </p>
           </div>
           <div className="lg:border-r-1 border-gray">
             <p className="text-[52px] text-center lg:text-[82px] text-orange">
-              420
+              <Image
+                src="/images/logos/logo_veka.webp"
+                alt="Veka"
+                width={150}
+                height={150}
+                className="inline"
+              />
             </p>
-            <p className="text-[24px] lg:text-[32px] text-black">
-              zufriedene Kunden
+            <p className=" text-black mt-4 p-4">
+              VEKA ist ein weltweit führender Hersteller von PVC-Profilen für
+              Fenster, Türen und Rollläden. Das Unternehmen wurde 1969 in
+              Deutschland gegründet und hat sich seitdem zu einem wichtigen
+              Akteur in der Baubranche entwickelt. VEKA zeichnet sich durch
+              innovative Produkte, hochwertige Materialien und umweltfreundliche
+              Herstellungsverfahren aus. Ihre Produkte werden international
+              vertrieben und haben sich durch ihre Langlebigkeit und
+              Energieeffizienz einen ausgezeichneten Ruf erworben.
             </p>
           </div>
           <div className="">
             <p className="text-[52px] text-center lg:text-[82px] text-orange">
-              832
+              <Image
+                src="/images/logos/logo_sch.webp"
+                alt="Schüco"
+                width={150}
+                height={150}
+                className="inline"
+              />
             </p>
-            <p className="text-[24px] lg:text-[32px] text-black">
-              montierte Fenster
+            <p className=" text-black mt-4 p-4">
+              Schüco ist ein weltweit führender Anbieter von hochwertigen
+              Fenster-, Tür- und Fassadensystemen sowie Solartechnik. Das
+              deutsche Unternehmen wurde 1951 gegründet und hat sich durch
+              innovative Produkte, modernes Design und hohe Qualität einen
+              exzellenten Ruf erarbeitet. Schüco-Produkte zeichnen sich durch
+              ihre Energieeffizienz, Sicherheit und Langlebigkeit aus. Sie
+              werden weltweit in verschiedensten Bauvorhaben eingesetzt, von
+              privaten Wohnhäusern bis hin zu großen gewerblichen und
+              industriellen Projekten.
             </p>
           </div>
+          <Button
+            size="lg"
+            className="mt-6 bg-orange text-white mx-auto block col-span-3"
+          >
+            <Link href="/fenster">Alle Fenster entdecken</Link>
+          </Button>
         </div>
         <div className="mb-12 mt-12">
           <div>

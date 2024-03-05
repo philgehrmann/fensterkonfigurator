@@ -9,12 +9,14 @@
         {
           "id": 1,
           "name": "Iglo 5",
-          "image": "/images/fenster/iglo5.jpeg"
+          "image": "/images/fenster/iglo5.jpeg",
+          "url": "IGLO5"
         },
         {
           "id": 2,
           "name": "Iglo Energy Classic",
           "image": "/images/fenster/iglo5classic.jpeg",
+          "url": "IGLO5CLASSIC",
           "variants": [
             {
               "id": "1d",
@@ -56,6 +58,7 @@
             {
               "name": "Iglo 5",
               "image": "",
+              "url": "IGLO5CLASSIC",
               "variants": [
                 {
                   "1d": ["11", "12", "13", "14", "15", "16", "17"]
@@ -69,6 +72,7 @@
           "2": [
             {
               "name": "Iglo Energy Classic",
+              "url": "IGLO5CLASSIC",
               "image": "",
               "variants": [
                 {
@@ -87,6 +91,7 @@
       "id": 3,
       "name": "Schüco",
       "image": "/images/logos/logo_sch.webp",
+      "url": "IGLO5CLASSIC",
       "description": "Schüco ist ein weltweit führender Anbieter von hochwertigen Fenster-, Tür- und Fassadensystemen für den Wohn- und Gewerbebau.",
       "konfiguration": [
         {
@@ -107,6 +112,7 @@
           "2": [
             {
               "name": "Iglo Energy Classic",
+              "url": "IGLO5CLASSIC",
               "image": "",
               "variants": [
                 {
