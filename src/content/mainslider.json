@@ -29,22 +29,6 @@
           "image": "/images/fenster/fenster-slider-4.jpg"
         }
       ]
-    },
-    {
-      "page": "energieeffizienz",
-      "slides": [
-        {
-          "name": "Qualitätsfenster aus Polen",
-          "image": "/images/fenster/bg-fenster-slider.jpg",
-          "headline": "Qualitätsfenster aus Polen"
-        },
-        {
-          "name": "Fenster1",
-          "image": "/images/fenster/bg-fenster-slider.jpg",
-          "headline": "Qualitätsfenster aus Polen",
-          "description": ""
-        }
-      ]
     }
   ]
 }

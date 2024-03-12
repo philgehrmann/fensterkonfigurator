@@ -432,7 +432,8 @@ export default function Page() {
                   Stellen Sie Ihre Fenster nach Ihren Wünschen zusammen und
                   erhalten sofort einen Preisvorschlag für Ihre Konfiguration.
                   Sollten Sie mit der Konfiguration zufrieden sein. Bestätigen
-                  Sie ihre Konfiguration mit dem Button "Konfiguration prüfen".
+                  Sie ihre Konfiguration mit dem Button &quot;Konfiguration
+                  prüfen&quot;.
                 </p>
               </div>
               <div>
@@ -443,8 +444,8 @@ export default function Page() {
                   {" "}
                   Lassen Sie sich Ihre Konfiguration anzeigen und prüfen Sie
                   Ihre Auswahl. Sollten Ihre Einstellungen passen, bestätigen
-                  Sie die Auswahl mit "Angebot anfragen". Ihre Konfiguration
-                  wird dann von unserem Team geprüft und individuell
+                  Sie die Auswahl mit Angebot anfragen. Ihre Konfiguration wird
+                  dann von unserem Team geprüft und individuell
                   zusammengestellt.
                 </p>
               </div>

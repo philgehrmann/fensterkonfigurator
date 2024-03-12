@@ -54,7 +54,10 @@ export default function Page() {
               <div className="fensterwrapper rounded-xl grid grid-cols-1 lg:grid-cols-2 gap-4">
                 {item.fenster.map((window, index) => {
                   return (
-                    <div className="hover:drop-shadow-lg relative mb-12">
+                    <div
+                      className="hover:drop-shadow-lg relative mb-12"
+                      key={index}
+                    >
                       <Link
                         href={"/fensterdetail/" + encodeURIComponent(window.id)}
                         key={index}

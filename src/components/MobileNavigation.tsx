@@ -74,7 +74,7 @@ export default function MobileNavigation({
           </div>
           <div className="px-12">
             {content.navigation.map((item, index) => {
-              return !item.subnav ? (
+              return (
                 <Link href={item.path} key={index}>
                   <li
                     className="grid content-center grid-flow-col border-b-2 text-[22px] py-4 border-transparent  font-[500]  hover:text-bermuda cursor-pointer"
@@ -89,35 +89,6 @@ export default function MobileNavigation({
                     </span>
                   </li>
                 </Link>
-              ) : (
-                <div>
-                  <li
-                    className=" border-b-2 border-bermuda text-[22px] list-none py-4 border-transparent  font-[500] cursor-pointer pt-4"
-                    data-hover={item.subnavIdent}
-                    key={index}
-                  >
-                    <h3 className="text-[22px] m-0 mb-2 border-b-2 pb-2 border-bermuda ">
-                      {item.name}
-                    </h3>
-                    {item.subnav && ""}
-
-                    <ul className="">
-                      {item.subnav.map((subnavitem, index) => (
-                        <li key={index}>
-                          <Link
-                            href={subnavitem.path}
-                            key={index}
-                            className="cursor-pointer hover:underline hover:text-bermuda text-[18px] w-full"
-                          >
-                            <p className="justify-self-end text-right inline-block">
-                              {subnavitem.type}
-                            </p>
-                          </Link>
-                        </li>
-                      ))}
-                    </ul>
-                  </li>
-                </div>
               );
             })}
           </div>

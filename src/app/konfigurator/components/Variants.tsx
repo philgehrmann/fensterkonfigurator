@@ -57,6 +57,7 @@ export default function Variants() {
         {variants[0].variants.map((variant: any, index: any) => {
           return (
             <div
+              key={index}
               className={
                 "w-full cursor-pointer grid grid-cols-1 border-[2px] px-2 py-2 items-center text-center bg-white rounded-xl drop-shadow-lg " +
                 (state.fenstervariant === variant.id

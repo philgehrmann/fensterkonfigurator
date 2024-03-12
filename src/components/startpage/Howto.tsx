@@ -103,7 +103,7 @@ export default function Howto() {
         <div className="mb-12 mt-12">
           <div>
             <h3 className="mb-6 lg:mb-2 mt-0 uppercase font-bold text-[24px] lg:text-[42px]">
-              So einfach geht's
+              So einfach geht&apos;s
             </h3>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
               <div className="grid grid-cols-1 lg:grid-cols-1  mb-6">
